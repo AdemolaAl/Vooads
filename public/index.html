@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vooads: type what you sell, get a video ad that sells</title>
+<meta name="description" content="Vooads makes video ads from one sentence: AI actors, voice, music, captions and edits. For shops, restaurants, salons, property, coaches, e-commerce and media buyers. 24 languages.">
+<link rel="canonical" href="https://vooads.com/">
+<meta property="og:title" content="Vooads: type what you sell, get a video ad that sells">
+<meta property="og:description" content="Video ads from one sentence. AI actors, voice, music, captions and edits in 24 languages.">
+<meta property="og:image" content="/assets/img/og.png"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#FFFFFF">
+<link rel="preload" href="/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script src="/assets/js/js-flag.js"></script>
+<link rel="stylesheet" href="/assets/css/site-v3.css?v=5">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Vooads","applicationCategory":"MultimediaApplication","operatingSystem":"Web","url":"https://vooads.com/","description":"AI video ad studio: UGC talking videos, street-interview style, podcast clips, product videos, photo to video, slideshows, animated ads, dubbing with lip-sync, hook remixes, brand music, background swaps and auto-edits in 24 languages.","publisher":{"@type":"Organization","name":"Vooads"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"49","highPrice":"799","offerCount":"4"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hd" id="hd">
+  <div class="hd-in">
+    <a class="logo" href="/" aria-label="Vooads home"><span class="mark" aria-hidden="true"><i></i><i></i></span><span class="word">Vooads</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#styles">Ad styles</a>
+      <a href="#how">How it works</a>
+      <a href="#who">Who it's for</a>
+      <a href="#pricing">Pricing</a>
+      <a href="/blog">Blog</a>
+    </nav>
+    <div class="hd-r">
+      <a class="lnk" href="/app#login">Log in</a>
+      <a class="btn btn-blue sm" href="/app#signup">Start free</a>
+      <button class="menu-b" id="menuB" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mnav" id="mnav" hidden>
+    <a href="#styles">Ad styles</a><a href="#how">How it works</a><a href="#who">Who it's for</a><a href="#pricing">Pricing</a><a href="/blog">Blog</a><a href="/app#login">Log in</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="kick">AI video ads for every business</p>
+      <h1 class="h-xl"><span class="ln">Type your idea.</span> <span class="ln">Get a finished video ad.</span></h1>
+      <p class="lede">Vooads writes the script, picks the actor and voice, edits it and adds captions, music and your logo. Then change anything by chat.</p>
+
+      <form class="prompt" id="heroPrompt" action="/app#signup" autocomplete="off">
+        <label for="heroQ" class="sr">What do you want to make?</label>
+        <div class="prompt-box">
+          <textarea id="heroQ" rows="2" maxlength="400" placeholder="What do you want to make?"></textarea>
+          <div class="prompt-bar">
+            <div class="prompt-chips" id="heroChips" aria-label="Ideas">
+              <button type="button" data-k="cafe" data-p="A café promo for our new oat honey latte, morning light, the first one is half price this week">Café promo</button>
+              <button type="button" data-k="boutique" data-p="Weekend sale at our fashion boutique, 30% off knitwear, new pieces in the window">Boutique sale</button>
+              <button type="button" data-k="app" data-p="An app install ad: a creator shows how our savings app puts a little aside every payday">App install</button>
+              <button type="button" data-k="realestate" data-p="A calm walkthrough tour of a bright three-bedroom home for sale, rooms full of daylight">Real estate tour</button>
+              <button type="button" data-k="fitness" data-p="A fitness creator after her workout with our chocolate protein shake, 30 grams of protein">Fitness product</button>
+            </div>
+            <button class="btn btn-blue go" type="submit"><span>Make my video</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <p class="prompt-note">Free credits to start. No card needed.</p>
+      </form>
+      <div id="i2v" class="i2v"></div>
+    </div>
+
+    <div class="hero-stage" id="heroStage">
+      <div class="wall" id="wall" aria-hidden="true">
+        <div class="col c1"><div class="track">
+          <figure><video data-v="ugc-serum" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="biz-cafe-promo" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="ugc-protein" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="sample-podcast" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="style-podcast" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="life-creator-filming" muted loop playsinline preload="none"></video></figure>
+        </div></div>
+        <div class="col c2"><div class="track">
+          <figure><video data-v="ugc-podcast-creator" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="style-product-headphones" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="ugc-sunscreen" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="biz-real-estate" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="style-street-interview" muted loop playsinline preload="none"></video></figure>
+        </div></div>
+        <div class="col c3"><div class="track">
+          <figure><video data-v="sample-fitness" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="ugc-saas" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="ad-skincare-v2" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="ugc-sneakers" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="biz-fashion-boutique" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="life-buyer-laptop" muted loop playsinline preload="none"></video></figure>
+        </div></div>
+        <div class="col c4"><div class="track">
+          <figure><video data-v="ugc-language-app" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="ugc-fintech" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="ugc-serum-es" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="ad-app-v2" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="life-phone-scroll" muted loop playsinline preload="none"></video></figure>
+          <figure><video data-v="sample-savings" muted loop playsinline preload="none"></video></figure>
+        </div></div>
+      </div>
+      <div class="feature" id="feature">
+        <div class="feature-frame">
+          <video class="fv on" data-v="ugc-podcast-creator" muted loop playsinline preload="metadata" data-prio="1"></video>
+          <video class="fv" data-v="sample-cafe" muted loop playsinline preload="none" data-prio="1"></video>
+          <video class="fv" data-v="sample-skincare" muted loop playsinline preload="none" data-prio="1"></video>
+          <video class="fv" data-v="ugc-desk-creator" muted loop playsinline preload="none" data-prio="1"></video>
+          <span class="made-tag">Made with Vooads</span>
+          <div class="feature-cap"><b id="fCap">UGC talking video</b><span id="fMeta">A creator at her podcast mic</span></div>
+        </div>
+        <ol class="feature-dots" id="fDots" aria-label="Featured examples"><li class="on"></li><li></li><li></li><li></li></ol>
+      </div>
+    </div>
+  </div>
+  <p class="hero-foot">Made with Vooads. Every face is AI-generated.</p>
+</section>
+
+<!-- ============ WHO IT'S FOR ============ -->
+<section class="who" id="who">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="h-l">Built for people who sell.</h2>
+      <p class="sub">Run a shop, a kitchen, a salon or a listing? Type what you offer. Buy media for a living? The power tools are here too.</p>
+    </div>
+    <div class="seg" role="tablist" aria-label="Who it's for">
+      <button role="tab" aria-selected="true" aria-controls="pBiz" id="tBiz" data-tab="biz">For businesses</button>
+      <button role="tab" aria-selected="false" aria-controls="pBuy" id="tBuy" data-tab="buy">For media buyers</button>
+      <span class="seg-pill" aria-hidden="true"></span>
+    </div>
+
+    <div class="who-panel on" id="pBiz" role="tabpanel" aria-labelledby="tBiz">
+      <div class="who-grid">
+        <div class="who-copy">
+          <h3>Ads for your business, without a camera.</h3>
+          <ul class="ticks">
+            <li><b>Start from your type of business.</b> Restaurant promo, product launch, shop sale, property tour, testimonial style or app ad.</li>
+            <li><b>No actors, no studio, no editing.</b> Pick an AI actor or keep it product-only. Vooads writes, voices and cuts it.</li>
+            <li><b>Know the price first.</b> You see the credit cost before anything is made. If a video fails, the credits come back.</li>
+          </ul>
+          <a class="btn btn-ink" href="/app#signup">Make your first ad</a>
+        </div>
+        <div class="who-reel">
+          <figure class="rc"><video data-v="biz-cafe-promo" muted loop playsinline preload="none"></video><figcaption>Café promo</figcaption></figure>
+          <figure class="rc up"><video data-v="biz-fashion-boutique" muted loop playsinline preload="none"></video><figcaption>Boutique promo</figcaption></figure>
+          <figure class="rc"><video data-v="biz-real-estate" muted loop playsinline preload="none"></video><figcaption>Property tour</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="who-panel" id="pBuy" role="tabpanel" aria-labelledby="tBuy" hidden>
+      <div class="who-grid">
+        <div class="who-copy">
+          <h3>Creative volume for people who test.</h3>
+          <ul class="ticks">
+            <li><b>Hook factory.</b> One winning video, ten new opening hooks, ready to split-test.</li>
+            <li><b>24 languages.</b> Scripts written for each market, not translated word for word, with lip-synced dubs.</li>
+            <li><b>Ad-safe check.</b> Ban Shield flags risky claims before you upload, with safer lines to swap in.</li>
+            <li><b>Niche-aware scripts.</b> E-commerce, apps, iGaming offers like 1win and Affstore programs, trading apps, health and more.</li>
+          </ul>
+          <a class="btn btn-ink" href="/app#signup">Start testing</a>
+        </div>
+        <div class="who-reel">
+          <figure class="rc"><video data-v="ugc-sunscreen" muted loop playsinline preload="none"></video><figcaption>UGC talking</figcaption></figure>
+          <figure class="rc up"><video data-v="ugc-serum-es" muted loop playsinline preload="none"></video><figcaption>Spanish version</figcaption></figure>
+          <figure class="rc"><video data-v="ugc-language-app" muted loop playsinline preload="none"></video><figcaption>App install</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AD STYLES GALLERY (dark) ============ -->
+<section class="styles" id="styles">
+  <div class="wrap">
+    <div class="sec-h light">
+      <h2 class="h-l">Every ad style, one studio.</h2>
+      <p class="sub">Talking creators, street interviews, fast product cuts, podcast clips, shop promos and property tours. Pick a style, type your product, done.</p>
+    </div>
+  </div>
+  <div class="gal" id="gal">
+    <div class="gal-track" id="galTrack">
+      <article class="gc"><video data-v="sample-podcast" muted loop playsinline preload="none"></video><div class="gc-t"><b>Podcast clip</b><span>A host on a studio mic</span></div></article>
+      <article class="gc"><video data-v="ugc-podcast-creator" muted loop playsinline preload="none"></video><div class="gc-t"><b>UGC talking video</b><span>A creator at her podcast mic</span></div></article>
+      <article class="gc"><video data-v="sample-founder" muted loop playsinline preload="none"></video><div class="gc-t"><b>UGC talking video</b><span>A founder at his desk</span></div></article>
+      <article class="gc"><video data-v="sample-savings" muted loop playsinline preload="none"></video><div class="gc-t"><b>UGC talking video</b><span>A savings app, on the bus</span></div></article>
+      <article class="gc"><video data-v="sample-cafe" muted loop playsinline preload="none"></video><div class="gc-t"><b>Local business promo</b><span>A café owner talks to camera</span></div></article>
+      <article class="gc"><video data-v="sample-fitness" muted loop playsinline preload="none"></video><div class="gc-t"><b>UGC talking video</b><span>A fitness creator and her shake</span></div></article>
+      <article class="gc"><video data-v="sample-skincare" muted loop playsinline preload="none"></video><div class="gc-t"><b>UGC talking video</b><span>A skincare creator and her serum</span></div></article>
+      <article class="gc"><video data-v="ugc-desk-creator" muted loop playsinline preload="none"></video><div class="gc-t"><b>UGC creator ad</b><span>A creator at her desk</span></div></article>
+      <article class="gc"><video data-v="ugc-serum" muted loop playsinline preload="none"></video><div class="gc-t"><b>UGC talking</b><span>A creator talks to camera</span></div></article>
+      <article class="gc"><video data-v="style-product-headphones" muted loop playsinline preload="none"></video><div class="gc-t"><b>Fast-cut product</b><span>Punchy, premium, no actor</span></div></article>
+      <article class="gc"><video data-v="biz-cafe-promo" muted loop playsinline preload="none"></video><div class="gc-t"><b>Café promo</b><span>Local business, warm and real</span></div></article>
+      <article class="gc"><video data-v="biz-real-estate" muted loop playsinline preload="none"></video><div class="gc-t"><b>Property tour</b><span>A smooth listing walkthrough</span></div></article>
+      <article class="gc"><video data-v="ugc-saas" muted loop playsinline preload="none"></video><div class="gc-t"><b>App ad</b><span>Software explained simply</span></div></article>
+      <article class="gc"><video data-v="ad-skincare-v2" muted loop playsinline preload="none"></video><div class="gc-t"><b>Animated ad</b><span>Kinetic text, voice and music</span></div></article>
+      <article class="gc"><video data-v="ugc-sneakers" muted loop playsinline preload="none"></video><div class="gc-t"><b>Unboxing</b><span>Hands-on, satisfying reveal</span></div></article>
+      <article class="gc"><video data-v="style-podcast" muted loop playsinline preload="none"></video><div class="gc-t"><b>Podcast</b><span>A host on a studio mic</span></div></article>
+      <article class="gc"><video data-v="style-street-interview" muted loop playsinline preload="none"></video><div class="gc-t"><b>Street interview</b><span>Handheld mic, real reactions</span></div></article>
+      <article class="gc"><video data-v="biz-fashion-boutique" muted loop playsinline preload="none"></video><div class="gc-t"><b>Boutique promo</b><span>New drop, sale or offer</span></div></article>
+    </div>
+  </div>
+  <div class="wrap"><p class="gal-note">Made with Vooads. Every face is AI-generated.</p></div>
+</section>
+
+<!-- ============ HOW IT'S MADE (scroll story) ============ -->
+<section class="how" id="how">
+  <div class="wrap how-grid">
+    <div class="how-steps">
+      <div class="sec-h left">
+        <h2 class="h-l">From one line to a finished ad.</h2>
+        <p class="sub">What happens after you press the button.</p>
+      </div>
+      <article class="hs" data-s="1">
+        <span class="hs-n">1</span>
+        <h3>You type one line</h3>
+        <p>Say what you sell and who it's for. Add a photo of your product if you have one. That's the whole brief.</p>
+        <div class="hs-mini m1"><span>Vitamin C serum for tired-looking skin, women 25 to 40</span></div>
+      </article>
+      <article class="hs" data-s="2">
+        <span class="hs-n">2</span>
+        <h3>Vooads writes the script</h3>
+        <p>A hook in the first second, a reason to believe, a clear call to action. Written for the language and the market you pick.</p>
+        <div class="hs-mini m2"><span>“Okay, I did not expect this.”</span><span>“Two weeks and my skin looks brighter.”</span><span>“Try it, link below.”</span></div>
+      </article>
+      <article class="hs" data-s="3">
+        <span class="hs-n">3</span>
+        <h3>Your video is made</h3>
+        <p>An AI actor performs it with a natural voice, or your product gets cinematic shots. Long videos are made in parts and joined into one.</p>
+        <div class="hs-mini m3"><i></i><i></i><i></i><i></i></div>
+      </article>
+      <article class="hs" data-s="4">
+        <span class="hs-n">4</span>
+        <h3>It edits itself</h3>
+        <p>Best line first, animated captions, music and an end card, sized for every vertical feed. Download it and run it.</p>
+        <div class="hs-mini m4"><b>Captions</b><b>Music</b><b>End card</b><b>9:16</b></div>
+      </article>
+    </div>
+    <div class="how-phone" aria-hidden="true">
+      <div class="phone" id="phone" data-step="1">
+        <div class="ph-screen">
+          <div class="ph-l l1">
+            <div class="ph-head">New ad</div>
+            <div class="ph-input"><span id="typeT"></span><span class="caret"></span></div>
+            <div class="ph-row"><span class="pill">UGC talking</span><span class="pill">English</span><span class="pill">15s</span></div>
+            <div class="ph-cost"><span>This will cost</span><b>233 credits</b></div>
+            <div class="ph-btn">Make my ad</div>
+          </div>
+          <div class="ph-l l2">
+            <div class="ph-head">Script</div>
+            <p class="sl"><em>Hook</em>Okay, I did not expect this.</p>
+            <p class="sl"><em>Proof</em>Two weeks with this serum and my skin looks brighter every morning.</p>
+            <p class="sl"><em>Detail</em>It sinks in fast. No sticky feel.</p>
+            <p class="sl"><em>Action</em>If your skin looks tired, try it. Link below.</p>
+          </div>
+          <div class="ph-l l3">
+            <div class="ph-head">Making your video</div>
+            <div class="frames"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i></div>
+            <div class="bar"><i></i></div>
+            <ul class="ph-steps"><li class="ok">Script written</li><li class="ok">Voice recorded</li><li class="ok">Scene 1 of 3</li><li class="now">Scene 2 of 3</li><li>Scene 3 of 3</li><li>Captions and music</li></ul>
+          </div>
+          <div class="ph-l l4">
+            <video data-v="ugc-serum" muted loop playsinline preload="none" data-prio="1"></video>
+            <div class="cap-burn"><span>Okay,</span> <span>I</span> <span>did</span> <span>not</span> <span>expect</span> <span>this.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTORS ============ -->
+<section class="actors" id="actors">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="h-l">Pick an AI actor. Or bring your own footage.</h2>
+      <p class="sub">No model fees and no releases to chase. The same face and voice across every version you make.</p>
+    </div>
+  </div>
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span class="face"><img data-i="creator-3" alt=""><em>Maya</em></span>
+      <span class="face"><video data-v="ugc-serum" muted loop playsinline preload="none"></video><em>Claire</em></span>
+      <span class="face"><img data-i="creator-4" alt=""><em>Omar</em></span>
+      <span class="face"><video data-v="ugc-saas" muted loop playsinline preload="none"></video><em>Daniel</em></span>
+      <span class="face"><img data-i="creator-5" alt=""><em>Bianca</em></span>
+      <span class="face"><video data-v="sample-founder" muted loop playsinline preload="none"></video><em>Ravi</em></span>
+      <span class="face"><img data-i="creator-6" alt=""><em>Frank</em></span>
+      <span class="face"><video data-v="sample-podcast" muted loop playsinline preload="none"></video><em>Hannah</em></span>
+      <span class="face"><video data-v="biz-fashion-boutique" muted loop playsinline preload="none"></video><em>Mei</em></span>
+      <span class="face"><img data-i="buyer-2" alt=""><em>Elena</em></span>
+      <span class="face"><video data-v="style-podcast" muted loop playsinline preload="none"></video><em>Nora</em></span>
+      <span class="face"><video data-v="ugc-protein" muted loop playsinline preload="none"></video><em>Sofia</em></span>
+    </div>
+  </div>
+  <div class="wrap"><p class="small-note">Every face is AI-generated. Vooads never copies a real person.</p></div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="feat" id="features">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="h-l">Everything an ad needs, in one place.</h2>
+      <p class="sub">Make, edit, translate and check your ads without switching tools.</p>
+    </div>
+    <div class="bento">
+      <article class="bx chat">
+        <div class="bx-t"><h3>Make it by chatting</h3><p>Ask for changes the way you would ask an editor. “Shorter.” “Warmer voice.” “Start with the price.”</p></div>
+        <div class="chat-demo" aria-hidden="true">
+          <p class="msg me">Make it 10 seconds and start with the offer</p>
+          <p class="msg ai">Done. The new cut opens on “First coffee is free”, 10 seconds, same actor.</p>
+          <p class="msg me">Add warm acoustic music</p>
+          <p class="msg ai">Added under the voice.</p>
+        </div>
+      </article>
+      <article class="bx edit">
+        <div class="bx-t"><h3>Auto-edit your own footage</h3><p>Upload a raw clip. Silences and filler words go, the best line moves first, captions and music go on.</p></div>
+        <div class="tl" aria-hidden="true">
+          <div class="tl-row raw"><i style="--w:12"></i><i class="cut" style="--w:6"></i><i style="--w:18"></i><i class="cut" style="--w:9"></i><i style="--w:22"></i><i class="cut" style="--w:7"></i><i style="--w:16"></i></div>
+          <div class="tl-row done"><i class="hk" style="--w:22"></i><i style="--w:12"></i><i style="--w:18"></i><i style="--w:16"></i></div>
+          <div class="tl-lbl"><span>Raw clip</span><span>Edited, hook first</span></div>
+        </div>
+      </article>
+      <article class="bx hooks">
+        <div class="bx-t"><h3>Hook factory</h3><p>One video in, ten new openings out. Same body, new first three seconds, ready to test.</p></div>
+        <div class="hook-grid" aria-hidden="true">
+          <span>“Stop scrolling if your skin looks tired”</span><span>“I almost returned this”</span><span>“Nobody talks about this serum”</span><span>“My dermatologist asked what I changed”</span><span>“Two weeks. No filter.”</span><span>“The cheapest thing in my routine”</span><span>“POV: your skin finally glows”</span><span>“Read this before you buy another serum”</span><span>“I was wrong about vitamin C”</span><span>“This is your sign”</span>
+        </div>
+      </article>
+      <article class="bx langs">
+        <div class="bx-t"><h3>24 languages</h3><p>Each script is written for the market, then voiced and lip-synced. One winning ad, every country you sell in.</p></div>
+        <div class="lang-pair" aria-hidden="true">
+          <figure><video data-v="ugc-serum" muted loop playsinline preload="none"></video><figcaption>English</figcaption></figure>
+          <figure><video data-v="ugc-serum-es" muted loop playsinline preload="none"></video><figcaption>Español</figcaption></figure>
+        </div>
+        <div class="lang-run" aria-hidden="true"><div><span>English</span><span>Español</span><span>Português</span><span>Français</span><span>Deutsch</span><span>Italiano</span><span>العربية</span><span>हिन्दी</span><span>Bahasa</span><span>Türkçe</span><span>日本語</span><span>한국어</span><span>中文</span><span>Kiswahili</span><span>Tagalog</span><span>Tiếng Việt</span><span>English</span><span>Español</span><span>Português</span><span>Français</span><span>Deutsch</span><span>Italiano</span><span>العربية</span><span>हिन्दी</span><span>Bahasa</span><span>Türkçe</span><span>日本語</span><span>한국어</span><span>中文</span><span>Kiswahili</span><span>Tagalog</span><span>Tiếng Việt</span></div></div>
+      </article>
+      <article class="bx shield">
+        <div class="bx-t"><h3>Ad-safe check</h3><p>Ban Shield reads your copy the way ad reviewers do, flags risky claims and suggests safer lines. Try it here, free.</p></div>
+        <form class="sh-form" id="shForm">
+          <label for="shIn" class="sr">Ad copy to check</label>
+          <textarea id="shIn" rows="3" maxlength="600">Guaranteed results in 7 days! Risk-free, lose 10kg fast.</textarea>
+          <div class="sh-row"><button class="btn btn-blue sm" type="submit">Check my copy</button><output id="shOut" class="sh-out" aria-live="polite"></output></div>
+          <p class="sh-fix" id="shFix" hidden></p>
+        </form>
+      </article>
+      <article class="bx music">
+        <div class="bx-t"><h3>Music that fits</h3><p>Background tracks by mood, or a brand jingle that sings your name. Reuse it on every ad for free once it's made.</p></div>
+        <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POWER TOOLS ============ -->
+<section class="power" id="power">
+  <div class="wrap power-grid">
+    <div class="power-h">
+      <h2 class="h-l">Power tools for media buyers.</h2>
+      <p class="sub">The parts that matter when you launch ten creatives a day.</p>
+      <a class="btn btn-ink" href="/app#signup">Open the studio</a>
+    </div>
+    <dl class="power-list">
+      <div><dt>Three quality levels</dt><dd>Standard, Pro realistic and Ultra cinematic, each on its own top video model. Same script, you pick the look and the price.</dd></div>
+      <div><dt>Long videos, one actor</dt><dd>Up to 120 seconds, made in parts with the same face and voice, joined into one file.</dd></div>
+      <div><dt>Dub with lip-sync</dt><dd>Your winning ad in another language, with the mouth matching the words.</dd></div>
+      <div><dt>Background swap</dt><dd>Put your own footage on a colour, a picture, an AI scene or stock video. Your voice and timing stay.</dd></div>
+      <div><dt>Hooks, angles and scripts</dt><dd>Twenty hooks or ten angles in seconds, briefed by an ad playbook for 22 niches.</dd></div>
+      <div><dt>Prices you can plan around</dt><dd>Every job shows its credit cost before it runs, and failed renders refund themselves.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 class="h-l">Simple plans. Credits you can see.</h2>
+      <p class="sub">Every plan makes every ad style. Yearly billing gives you two months free. Top-ups never expire.</p>
+    </div>
+    <div class="bill" role="radiogroup" aria-label="Billing period">
+      <button role="radio" aria-checked="true" data-period="month">Monthly</button>
+      <button role="radio" aria-checked="false" data-period="year">Yearly <em>2 months free</em></button>
+    </div>
+    <div class="plans" id="plans"></div>
+    <div class="price-more">
+      <div class="costs">
+        <h3>What things cost</h3>
+        <table id="costTable"><tbody></tbody></table>
+        <p class="fine">Exact credits are always shown before you make anything. Pro realistic and Ultra cinematic cost more per second.</p>
+      </div>
+      <div class="topups">
+        <h3>Top-ups</h3>
+        <div id="topups" class="tu-list"></div>
+        <p class="fine">For paid plans. Pay by card, in crypto (USDT or BTC), or with local payment methods across Africa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap narrow">
+    <h2 class="h-l">Questions, answered.</h2>
+    <div class="qa">
+      <details><summary>Are the people in the videos real?</summary><p>No. Every actor is AI-generated, so there are no model releases or usage fees. Follow each ad platform's rules for AI content.</p></details>
+      <details><summary>I'm not a video person. Can I still use it?</summary><p>Yes. Pick your type of business, type what you sell, and press the button. Vooads writes the script, picks the shots, adds the voice, captions and music. You can change anything in plain words.</p></details>
+      <details><summary>What can I make?</summary><p>UGC talking videos, street-interview style, podcast clips, product videos, photo to video, slideshows with voiceover, animated ads, dubs with lip-sync, hook remixes, brand music, background swaps and auto-edits of your own footage. Plus hooks, angles, scripts and image sets.</p></details>
+      <details><summary>How much does a video cost?</summary><p>It depends on the style, length and quality level. A 15-second UGC video on the Standard level is 225 credits. You always see the exact credits before you make anything.</p></details>
+      <details><summary>What if a video fails?</summary><p>Your credits come back automatically. Open a ticket and a person on the team takes a look.</p></details>
+      <details><summary>Can I run the ads commercially?</summary><p>Yes. On any paid plan, on any platform, with no watermark.</p></details>
+      <details><summary>Which languages work?</summary><p>24, including Spanish, Portuguese, French, German, Arabic, Hindi, Indonesian, Japanese, Korean, Chinese, Swahili and Filipino. Each script is written for the language, never translated word for word.</p></details>
+      <details><summary>How do I pay?</summary><p>By card, in crypto (USDT or BTC), or with local payment methods in many African countries. Plans renew monthly or yearly. Top-ups never expire.</p></details>
+      <details><summary>Can I cancel?</summary><p>Yes. Turn off auto-renew in Credits. Your plan runs to the end of the paid period. See the <a href="/legal/refunds">Refund Policy</a>.</p></details>
+      <details><summary>What can't I use Vooads for?</summary><p>Anything illegal, scams, fake reviews, pretending to be a real person or brand, or misleading health and money claims. Read the <a href="/legal/acceptable-use">Acceptable Use Policy</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final" id="start">
+  <div class="final-float" aria-hidden="true">
+    <figure class="ff f1"><video data-v="ugc-sunscreen" muted loop playsinline preload="none"></video></figure>
+    <figure class="ff f2"><video data-v="biz-cafe-promo" muted loop playsinline preload="none"></video></figure>
+    <figure class="ff f3"><video data-v="style-product-headphones" muted loop playsinline preload="none"></video></figure>
+    <figure class="ff f4"><video data-v="style-street-interview" muted loop playsinline preload="none"></video></figure>
+  </div>
+  <div class="wrap final-in">
+    <h2 class="h-xl light">Your next ad is one sentence away.</h2>
+    <form class="prompt dark" id="finalPrompt" action="/app#signup" autocomplete="off">
+      <label for="finalQ" class="sr">What do you want to make?</label>
+      <div class="prompt-box">
+        <textarea id="finalQ" rows="1" maxlength="400" placeholder="What do you want to make?"></textarea>
+        <div class="prompt-bar end"><button class="btn btn-blue go" type="submit"><span>Make my ad</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+      </div>
+      <p class="prompt-note">Free credits to start. No card needed.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap ft-in">
+    <div class="ft-brand">
+      <a class="logo" href="/" aria-label="Vooads home"><span class="mark" aria-hidden="true"><i></i><i></i></span><span class="word">Vooads</span></a>
+      <p>Video ads from one sentence.</p>
+      <a class="voo" href="https://voosquare.com" rel="noopener">Part of VooSquare</a>
+    </div>
+    <nav class="ft-cols" aria-label="Footer">
+      <div><b>Product</b><a href="#styles">Ad styles</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="/app">Studio</a><a href="/blog">Blog</a></div>
+      <div><b>Legal</b><a href="/legal/terms">Terms</a><a href="/legal/privacy">Privacy</a><a href="/legal/acceptable-use">Acceptable use</a><a href="/legal/refunds">Refunds</a><a href="/legal/cookies">Cookies</a><a href="/legal/ai-content-policy">AI content</a><a href="/legal/dmca">Copyright</a></div>
+      <div><b>Help</b><a href="/app#support">Support</a><a href="mailto:support@vooads.com">support@vooads.com</a></div>
+    </nav>
+  </div>
+  <div class="wrap ft-base"><span>© <span id="yr">2026</span> Zedapex Limited, Lagos</span><span>Every face in our examples is AI-generated.</span></div>
+</footer>
+
+<script src="/assets/js/pricing-fallback.js"></script>
+<script src="/voo-connect-browser.js" defer></script>
+<script src="/assets/js/i2v.js?v=1" defer></script>
+<script src="/assets/js/site-v3.js?v=5" defer></script>
+<script src="/assets/js/sound-player.js?v=1" defer></script>
+</body>
+</html>

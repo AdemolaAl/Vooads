@@ -1,0 +1,136 @@
+[
+  {
+    "id": "getting-started",
+    "title": "Getting started",
+    "minutes": 2,
+    "level": "Beginner",
+    "summary": "Find your way around the studio, check your credits and open the live guide.",
+    "scenes": [
+      {"screen": "home", "target": "#m-credits", "action": "point", "caption": "Your credit balance", "narration": "Welcome to Vooads. Up here is your credit balance, so you always know what you can make today."},
+      {"screen": "home", "target": "#m-guide", "action": "click", "caption": "Open the live guide", "narration": "If you ever feel lost, tap the guide. It walks you through the screen you are on, step by step."},
+      {"screen": "home", "target": "#m-create-btn", "action": "click", "caption": "Start a new ad", "narration": "When you are ready to make something, tap Create."},
+      {"screen": "create", "target": "#m-type-ugc", "action": "point", "caption": "UGC talking video", "narration": "This is where you pick what to make. A UGC video is an AI presenter talking to camera about your product."},
+      {"screen": "create", "target": "#m-type-hooks", "action": "point", "caption": "Hooks and copy", "narration": "Hooks are the cheapest place to start. You get twenty opening lines to test before you spend on video."},
+      {"screen": "library", "target": "#m-first-ad", "action": "point", "caption": "Everything you make lives here", "narration": "Everything you make shows up in your library, ready to download whenever you need it."}
+    ]
+  },
+  {
+    "id": "first-ugc-video",
+    "title": "Your first UGC video",
+    "minutes": 3,
+    "level": "Beginner",
+    "summary": "Describe your product, pick a presenter, check the script and generate your first talking video.",
+    "scenes": [
+      {"screen": "create", "target": "#m-type-ugc", "action": "click", "caption": "Choose UGC video", "narration": "Let's make your first talking video. Tap UGC video."},
+      {"screen": "create", "target": "#m-product", "action": "type", "text": "Lightweight sunscreen with no white cast, for daily wear", "caption": "Describe your product in one line", "narration": "Describe your product in one clear line. Say what it is and who it is for."},
+      {"screen": "create", "target": "#m-language", "action": "click", "caption": "Pick the language", "narration": "Pick the language your buyers speak. The script is written natively, so it does not sound translated."},
+      {"screen": "create-ugc", "target": "#m-presenter", "action": "click", "caption": "Choose a presenter", "narration": "Now choose a presenter. Pick someone who looks like the person you want to reach."},
+      {"screen": "create-ugc", "target": "#m-length", "action": "click", "caption": "Set the length", "narration": "Fifteen seconds is a great first test. Short ads are cheaper and easier to compare."},
+      {"screen": "create-ugc", "target": "#m-script-toggle", "action": "click", "caption": "Let AI write the script", "narration": "Turn on the AI script and Vooads writes a hook, the middle and a call to action for you."},
+      {"screen": "create-ugc", "target": "#m-script", "action": "point", "caption": "Read and edit the script", "narration": "Read it through. Change any line you like before you spend credits on the video."},
+      {"screen": "create-ugc", "target": "#m-generate", "action": "click", "caption": "Generate", "narration": "Happy with it? Hit generate. Your video lands in the library in a few minutes."}
+    ]
+  },
+  {
+    "id": "long-videos",
+    "title": "Long videos",
+    "minutes": 3,
+    "level": "Intermediate",
+    "summary": "Make 30 to 90 second videos. See how parts are stitched and how to write lines that cut cleanly.",
+    "scenes": [
+      {"screen": "create-ugc", "target": "#m-length", "action": "click", "caption": "Pick a longer length", "narration": "Some products need more time to explain. Pick a longer length here, up to what your plan allows."},
+      {"screen": "create-ugc", "target": "#m-long-note", "action": "point", "caption": "Parts are stitched for you", "narration": "Long videos are made in short parts and stitched together automatically. This note shows how many parts yours will have."},
+      {"screen": "create-ugc", "target": "#m-script", "action": "type", "text": "Here is the part I did not expect.", "caption": "Write lines that end cleanly", "narration": "Keep each line to one complete thought. Short lines make the joins between parts feel smooth."},
+      {"screen": "create-ugc", "target": "#m-shield-line", "action": "point", "caption": "Ban Shield checks every line", "narration": "Ban Shield checks the whole script as you go, so a risky phrase does not slip in at second forty."},
+      {"screen": "create-ugc", "target": "#m-generate", "action": "click", "caption": "Generate the long video", "narration": "Credits are taken up front. If a render fails, you get every credit back."},
+      {"screen": "library", "target": "#m-first-ad", "action": "point", "caption": "One finished video", "narration": "When it is done, you get one finished video in your library, with the same presenter and voice all the way through."}
+    ]
+  },
+  {
+    "id": "languages-geos",
+    "title": "Languages and geos",
+    "minutes": 3,
+    "level": "Intermediate",
+    "summary": "Take a winning ad into new markets with native scripts, local currency and the right presenter.",
+    "scenes": [
+      {"screen": "library", "target": "#m-filter", "action": "click", "caption": "Find your winner", "narration": "Start with an ad that already works. Filter your library to find it."},
+      {"screen": "create", "target": "#m-product", "action": "type", "text": "Same sunscreen, price R199, for South Africa", "caption": "Add local details", "narration": "Add the local price and market to your product line. Real local details make the ad feel native."},
+      {"screen": "create", "target": "#m-language", "action": "click", "caption": "Choose the new language", "narration": "Pick the new language. Vooads rewrites the script for that market instead of translating it word for word."},
+      {"screen": "create-ugc", "target": "#m-presenter", "action": "click", "caption": "Match the presenter to the market", "narration": "Choose a presenter who fits the new market. It is one of the biggest levers you have."},
+      {"screen": "create-ugc", "target": "#m-script", "action": "point", "caption": "Keep the winning angle", "narration": "Keep the same angle and structure as your winner. Change the words, the currency and the references."},
+      {"screen": "create-ugc", "target": "#m-generate", "action": "click", "caption": "Generate the local version", "narration": "Generate, and you have a local version ready to test next to the original."}
+    ]
+  },
+  {
+    "id": "ban-shield",
+    "title": "Ban Shield",
+    "minutes": 2,
+    "level": "Beginner",
+    "summary": "Check your copy for wording that often gets ads rejected, and fix it in one click.",
+    "scenes": [
+      {"screen": "shield", "target": "#m-shield-text", "action": "type", "text": "Make $500 a day with this trading app, guaranteed.", "caption": "Paste your copy", "narration": "Paste any ad copy or script here. Let's try a line that would get flagged."},
+      {"screen": "shield", "target": "#m-shield-check", "action": "click", "caption": "Run the check", "narration": "Tap check. Ban Shield looks for income claims, health claims, personal attributes and other common rejection reasons."},
+      {"screen": "shield", "target": "#m-shield-text", "action": "point", "caption": "See what is risky", "narration": "Here it flags the income claim and the guarantee. Both are common reasons finance ads get rejected."},
+      {"screen": "shield", "target": "#m-shield-fix", "action": "click", "caption": "Get a safer version", "narration": "Tap fix to get a safer rewrite that keeps your angle."},
+      {"screen": "create-ugc", "target": "#m-shield-line", "action": "point", "caption": "It runs on every script", "narration": "Ban Shield also runs on every script you generate. It lowers your risk, but the platforms always make the final call."}
+    ]
+  },
+  {
+    "id": "credits-plans",
+    "title": "Credits and plans",
+    "minutes": 2,
+    "level": "Beginner",
+    "summary": "How credits work, which plan fits you, how to top up and how to use a discount code.",
+    "scenes": [
+      {"screen": "home", "target": "#m-credits", "action": "click", "caption": "Open your wallet", "narration": "Tap your balance to open the wallet. Everything about credits and billing lives here."},
+      {"screen": "wallet", "target": "#m-plans", "action": "point", "caption": "Compare plans", "narration": "Every plan gives you monthly credits. Bigger plans give more credits, longer videos and AI scripts from Pro upwards."},
+      {"screen": "wallet", "target": "#m-topup", "action": "point", "caption": "Top up any time", "narration": "Running low mid-week? Top up. Top-up credits do not expire, and plan credits are used first."},
+      {"screen": "wallet", "target": "#m-discount", "action": "type", "text": "WELCOME30", "caption": "Apply a discount code", "narration": "Got a code from an email? Type it here before you pay."},
+      {"screen": "wallet", "target": "#m-plans", "action": "click", "caption": "Pick and pay", "narration": "Choose a plan and pay by card, a local method or crypto, depending on what is available where you are."}
+    ]
+  },
+  {
+    "id": "support-tickets",
+    "title": "Support and tickets",
+    "minutes": 2,
+    "level": "Beginner",
+    "summary": "Open a ticket, describe the problem clearly and request a callback when you need one.",
+    "scenes": [
+      {"screen": "support", "target": "#m-new-ticket", "action": "click", "caption": "Open a new ticket", "narration": "Need help? Open a new ticket. A real person on our team reads every one."},
+      {"screen": "support", "target": "#m-ticket-subject", "action": "type", "text": "Video stuck at rendering", "caption": "Write a clear subject", "narration": "Give it a short, clear subject. It helps us route it to the right person fast."},
+      {"screen": "support", "target": "#m-ticket-send", "action": "click", "caption": "Send it", "narration": "Send it. You get instant help articles that might solve it right away, plus our expected reply time."},
+      {"screen": "support", "target": "#m-call", "action": "click", "caption": "Ask for a callback", "narration": "Prefer to talk? Request a callback and pick a time that suits you."},
+      {"screen": "support", "target": "#m-new-ticket", "action": "point", "caption": "Replies arrive by email too", "narration": "When we reply, you get an email as well, so you never have to keep this page open."}
+    ]
+  },
+  {
+    "id": "scaling-winner",
+    "title": "Scaling a winner",
+    "minutes": 4,
+    "level": "Advanced",
+    "summary": "Turn one winning ad into fresh hooks, new presenters, slideshows and new geos before it fatigues.",
+    "scenes": [
+      {"screen": "library", "target": "#m-filter", "action": "click", "caption": "Find the winner", "narration": "Every winner fatigues. The trick is to replace it before it does. Start by finding it in your library."},
+      {"screen": "create", "target": "#m-type-hooks", "action": "click", "caption": "Write new hooks for it", "narration": "First, write twenty new hooks for the same product and angle. Keep the angle, change the opening."},
+      {"screen": "create", "target": "#m-product", "action": "type", "text": "Same product, same angle: saves 10 minutes every morning", "caption": "Keep the winning angle", "narration": "Name the winning angle in your product line, so every hook builds on what already works."},
+      {"screen": "create-ugc", "target": "#m-presenter", "action": "click", "caption": "Try new presenters", "narration": "Pick your three best hooks and try them with two or three new presenters."},
+      {"screen": "create", "target": "#m-type-slideshow", "action": "click", "caption": "Add a slideshow version", "narration": "Make a slideshow version too. It is a cheap way to test the same idea in a different format."},
+      {"screen": "create", "target": "#m-language", "action": "click", "caption": "Take it to the next geo", "narration": "Then take the winner into your next language or market."},
+      {"screen": "library", "target": "#m-download", "action": "click", "caption": "Download and launch", "narration": "Download the batch and launch it next to your winner. Let the data pick what stays."}
+    ]
+  },
+  {
+    "id": "referrals-brand",
+    "title": "Referrals and brand settings",
+    "minutes": 2,
+    "level": "Beginner",
+    "summary": "Save your brand details once, and share your referral link to earn commission.",
+    "scenes": [
+      {"screen": "settings", "target": "#m-brand", "action": "type", "text": "Glowline Skincare", "caption": "Add your brand", "narration": "Add your brand name once in settings, so every script uses it the same way."},
+      {"screen": "settings", "target": "#m-save", "action": "click", "caption": "Save", "narration": "Save it, and you are done."},
+      {"screen": "refer", "target": "#m-ref-link", "action": "point", "caption": "Your referral link", "narration": "This is your referral link. When someone you refer pays, you earn a commission."},
+      {"screen": "refer", "target": "#m-ref-copy", "action": "click", "caption": "Copy and share", "narration": "Copy it and share it with other media buyers. Honest recommendations only, please."},
+      {"screen": "home", "target": "#m-guide", "action": "point", "caption": "The guide is always here", "narration": "And remember, the live guide is always one tap away if you need it."}
+    ]
+  }
+]

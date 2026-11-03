@@ -1,0 +1,16 @@
+{
+  "name": "vooads",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vooads by Zedapex: AI UGC video ads for media buyers. Zero dependencies: Node 22 + built-in SQLite.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --no-warnings server/index.js",
+    "dev": "node --no-warnings --watch server/index.js",
+    "check": "node --no-warnings server/selfcheck.js",
+    "check:syntax": "node scripts/check-syntax.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

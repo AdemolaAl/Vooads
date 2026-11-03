@@ -1,0 +1,10 @@
+# Railway build settings. Vooads has no npm dependencies; it needs Node 22 and ffmpeg (stitches long videos and slideshows).
+[variables]
+NIXPACKS_NODE_VERSION = "22"
+
+# '...' keeps the default packages (Node 22 from NIXPACKS_NODE_VERSION) and adds ffmpeg.
+[phases.setup]
+nixPkgs = ["...", "ffmpeg"]
+
+[phases.install]
+cmds = ["echo 'No dependencies to install'"]

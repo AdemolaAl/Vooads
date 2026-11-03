@@ -1,0 +1,177 @@
+/* Drawn scene motion for the homepage (VooToons cast + Create-card scenes).
+ Copied from toons.css (toon motion), polish.css (scene motion) and edit-tools.css (editing-tool scenes) so the homepage
+ does not load studio stylesheets whose class names collide with the site. Keep in sync when those blocks change.
+ Motion = transform + opacity only; .tsc.off pauses off-screen scenes; reduced motion stops everything. */
+/* ---------- toon motion ---------- */
+.tn{overflow:visible;display:block}
+.tn-blink{transform-box:fill-box;transform-origin:center;animation:tnBlink 4.8s infinite;animation-delay:var(--d,0s)}
+@keyframes tnBlink{0%,93%,100%{transform:scaleY(1)}95.5%{transform:scaleY(.1)}}
+.tn-mo{opacity:0;transform-box:fill-box;transform-origin:center}
+.talking .tn-mc{opacity:0}
+.talking .tn-mo{opacity:1;animation:tnTalk .2s ease-in-out infinite alternate}
+@keyframes tnTalk{from{transform:scaleY(.3)}to{transform:scaleY(1.08)}}
+.tn-body{transform-box:fill-box;transform-origin:50% 100%;animation:tnBob 3.4s ease-in-out infinite;animation-delay:var(--d,0s)}
+@keyframes tnBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.tn-head{transform-box:fill-box;transform-origin:50% 92%;animation:tnTilt 6.5s ease-in-out infinite;animation-delay:var(--d,0s)}
+@keyframes tnTilt{0%,100%{transform:rotate(0)}28%{transform:rotate(-5deg)}62%{transform:rotate(4deg)}}
+.tn-nod{animation:tnNod 2.6s ease-in-out infinite}
+@keyframes tnNod{0%,100%{transform:rotate(0) translateY(0)}20%{transform:rotate(-3deg) translateY(1px)}45%{transform:rotate(2deg)}70%{transform:rotate(-1deg) translateY(1.5px)}}
+.tn-type{transform-box:fill-box;transform-origin:30% 10%;animation:tnType .32s ease-in-out infinite alternate}
+.tn-type.r{animation-delay:.16s}
+@keyframes tnType{to{transform:translateY(-3px)}}
+.tn-gest{transform-box:fill-box;transform-origin:95% 95%;animation:tnGest 2.4s ease-in-out infinite}
+@keyframes tnGest{0%,100%{transform:rotate(0)}30%{transform:rotate(-10deg)}60%{transform:rotate(6deg)}}
+.tn-holdp{transform-box:fill-box;transform-origin:70% 90%;animation:tnHold 3.2s ease-in-out infinite}
+@keyframes tnHold{0%,100%{transform:rotate(0)}50%{transform:rotate(-5deg) translateY(-2px)}}
+.tn-filmp{transform-box:fill-box;transform-origin:90% 90%;animation:tnFilm 4s ease-in-out infinite}
+@keyframes tnFilm{0%,100%{transform:rotate(0)}50%{transform:rotate(2.5deg) translateY(1px)}}
+.tn-arw,.tn-ac{display:none}
+.waving .tn-ar{display:none}.waving .tn-arw{display:inline}
+.tn-wv{transform-box:fill-box;transform-origin:12% 96%;animation:tnWave 1.3s ease-in-out infinite}
+@keyframes tnWave{0%,100%{transform:rotate(0)}20%{transform:rotate(-24deg)}40%{transform:rotate(8deg)}60%{transform:rotate(-20deg)}80%{transform:rotate(4deg)}}
+.cheer .tn-al,.cheer .tn-ar,.cheer .tn-arw{display:none}
+.cheer .tn-ac{display:inline}
+.cheer .tn-body{animation:tnJump .42s ease-in-out infinite alternate}
+.cheer .tn-mc{opacity:0}.cheer .tn-mo{opacity:1}
+.tn-ch{transform-box:fill-box;transform-origin:50% 100%;animation:tnCh .42s ease-in-out infinite alternate}
+.tn-ch.r{animation-delay:.21s}
+@keyframes tnJump{from{transform:translateY(0)}to{transform:translateY(-9px)}}
+@keyframes tnCh{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+.tn-point{transform-box:fill-box;transform-origin:95% 85%;animation:tnPoint 7.5s ease-in-out infinite}
+@keyframes tnPoint{0%,18%{transform:rotate(0)}26%,46%{transform:rotate(14deg)}54%,74%{transform:rotate(-9deg)}82%,100%{transform:rotate(0)}}
+.tn-rec{opacity:0}
+.tn-glow{transform-box:fill-box;transform-origin:center;animation:tnGlow 3s ease-in-out infinite}
+@keyframes tnGlow{50%{opacity:.2;transform:scale(1.06)}}
+.tn-sparks>*{transform-box:fill-box;transform-origin:center;animation:tnSpark 3.2s ease-in-out infinite}
+.tn-sparks .sp2{animation-delay:-1.1s}.tn-sparks .sp3{animation-delay:-2.2s}
+@keyframes tnSpark{0%,100%{transform:scale(.6) rotate(0);opacity:.35}50%{transform:scale(1.15) rotate(45deg);opacity:1}}
+.tn-hearts path{opacity:0;animation:tnHeart 4.2s ease-out infinite}
+.tn-hearts .h1{animation-delay:1.4s}.tn-hearts .h2{animation-delay:2.8s}
+@keyframes tnHeart{0%{opacity:0;transform:translate(0,0) scale(.5)}15%{opacity:1}70%{opacity:.9}100%{opacity:0;transform:translate(14px,-90px) scale(1.1)}}
+.tn-float{transform-box:fill-box;transform-origin:center;animation:tnFloat 3.6s ease-in-out infinite}
+@keyframes tnFloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-7px) rotate(3deg)}}
+
+.tsc{position:relative;display:block;aspect-ratio:16/10;border-radius:14px;overflow:hidden;background:linear-gradient(160deg,#FFF9F5 0%,#FBF1E9 100%);isolation:isolate}
+.tsc::before{content:"";position:absolute;inset:0;background:radial-gradient(rgba(11,11,10,.06) 1px,transparent 1.3px) 0 0/12px 12px;opacity:.6;z-index:-1}
+.tsc .tsc-svg{position:absolute;inset:6% 4% 0;width:92%;height:94%}
+/* ---------- scene motion ---------- */
+.tsc *,.co-sum *,.co-ok *{transform-box:fill-box}
+.sc-bob{transform-origin:center;animation:scBob 4s ease-in-out infinite}
+@keyframes scBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+.sc-float{transform-origin:50% 100%;animation:scFloat 3.4s ease-in-out infinite}
+@keyframes scFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.sc-blink{animation:scBlink 1.2s steps(1) infinite}
+@keyframes scBlink{50%{opacity:.15}}
+.sc-pop{transform-origin:center;animation:scPop 4.8s var(--ease) infinite}
+.sc-pop.d2{animation-delay:-2.4s}
+@keyframes scPop{0%{opacity:0;transform:scale(.6) translateY(4px)}8%,86%{opacity:1;transform:none}96%,100%{opacity:0;transform:scale(.9) translateY(-3px)}}
+.sc-type{transform-origin:0 50%;animation:scType 3.6s var(--ease) infinite}
+.sc-type.d2{animation-delay:.25s}
+@keyframes scType{0%{transform:scaleX(0);opacity:0}14%,82%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+.sc-wave{transform-origin:0 50%;animation:scWave 1.8s ease-out infinite;opacity:0}
+.sc-wave.d2{animation-delay:.3s}.sc-wave.d3{animation-delay:.6s}
+@keyframes scWave{0%{opacity:0;transform:scale(.7)}30%{opacity:1}100%{opacity:0;transform:scale(1.15)}}
+.sc-mic{transform-origin:50% 100%;animation:scMic 3s ease-in-out infinite}
+@keyframes scMic{0%,100%{transform:rotate(0)}50%{transform:rotate(-4deg)}}
+.sc-onair{animation:scAir 2.4s ease-in-out infinite}
+@keyframes scAir{50%{opacity:.7}}
+.sc-turn{animation:scTurn 3.2s linear infinite}
+@keyframes scTurn{from{transform:translateX(0)}to{transform:translateX(68px)}}
+.sc-tw{transform-origin:center;animation:scTw 2.8s ease-in-out infinite}
+.sc-tw.d2{animation-delay:-.9s}.sc-tw.d3{animation-delay:-1.8s}
+@keyframes scTw{0%,100%{transform:scale(.55) rotate(0);opacity:.35}50%{transform:scale(1.1) rotate(45deg);opacity:1}}
+.sc-lines path{transform-origin:100% 50%;animation:scLine 1.4s ease-in-out infinite}
+.sc-lines .d2{animation-delay:.2s}.sc-lines .d3{animation-delay:.4s}
+@keyframes scLine{0%{transform:translateX(6px) scaleX(.3);opacity:0}40%{opacity:1}100%{transform:translateX(-6px) scaleX(1);opacity:0}}
+.sc-tilt{transform-origin:50% 100%;animation:scTilt 4.4s ease-in-out infinite}
+@keyframes scTilt{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(1.5deg) translateY(-2px)}}
+.sc-sun{animation:scSun 4.4s ease-in-out infinite}
+@keyframes scSun{0%,100%{transform:translateY(6px)}50%{transform:translateY(-4px)}}
+.sc-cloud{animation:scCloud 6s linear infinite}
+@keyframes scCloud{from{transform:translateX(-30px)}to{transform:translateX(70px)}}
+.sc-hill{animation:scHill 4.4s ease-in-out infinite}
+@keyframes scHill{0%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}}
+.sc-pulse{transform-origin:center;animation:scPulse 2.2s ease-in-out infinite}
+@keyframes scPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+.sc-flip{transform-origin:center;animation:scFlip 4s var(--ease) infinite}
+@keyframes scFlip{0%,38%{transform:scaleX(1)}46%{transform:scaleX(0)}54%,88%{transform:scaleX(1)}96%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+.sc-fb{opacity:0;animation:scFb 4s steps(1) infinite}
+@keyframes scFb{0%,45.9%{opacity:0}46%,95.9%{opacity:1}96%,100%{opacity:0}}
+.sc-dot{animation:scDot 4s steps(1) infinite}
+@keyframes scDot{0%,45%{transform:translateX(0)}46%,95%{transform:translateX(13px)}96%{transform:translateX(27px)}}
+.sc-globe{animation:scGlobe 5s linear infinite}
+@keyframes scGlobe{from{transform:translateX(0)}to{transform:translateX(28px)}}
+.sc-l1,.sc-l2,.sc-l3{opacity:0;animation:scLang 6s infinite}
+.sc-l2{animation-delay:2s}.sc-l3{animation-delay:4s}
+@keyframes scLang{0%{opacity:0;transform:translateY(4px)}5%,30%{opacity:1;transform:none}35%,100%{opacity:0;transform:translateY(-4px)}}
+.sc-h1,.sc-h2{animation:scH 5s var(--ease) infinite}
+.sc-h2{animation-delay:-2.5s}
+@keyframes scH{0%{opacity:0;transform:translateY(-16px)}8%,44%{opacity:1;transform:none}50%,100%{opacity:0;transform:translateY(10px)}}
+.sc-bl1,.sc-bl2{transform-origin:0 50%;animation:scSnip .9s ease-in-out infinite alternate}
+.sc-bl1{transform-origin:0% 100%}.sc-bl2{transform-origin:0% 0%;animation-name:scSnip2}
+@keyframes scSnip{from{transform:rotate(0)}to{transform:rotate(14deg)}}
+@keyframes scSnip2{from{transform:rotate(0)}to{transform:rotate(-14deg)}}
+.sc-kin{animation:scKin 4.2s var(--ease) infinite}
+.sc-kin.d2{animation-delay:.18s}.sc-kin.d3{animation-delay:.36s}
+@keyframes scKin{0%{opacity:0;transform:translateX(-14px)}12%,80%{opacity:1;transform:none}92%,100%{opacity:0;transform:translateX(10px)}}
+.sc-eq{transform-origin:50% 100%;animation:scEq .9s ease-in-out infinite alternate}
+.sc-eq.d2{animation-delay:-.3s}.sc-eq.d3{animation-delay:-.6s}.sc-eq.d4{animation-delay:-.15s}
+@keyframes scEq{from{transform:scaleY(.25)}to{transform:scaleY(1)}}
+.sc-note{animation:scNote 3s ease-out infinite;opacity:0}
+.sc-note.d2{animation-delay:1.5s}
+@keyframes scNote{0%{opacity:0;transform:translate(0,6px) rotate(-6deg)}20%{opacity:1}100%{opacity:0;transform:translate(10px,-22px) rotate(10deg)}}
+/* keep the cast calm inside small cards */
+.tsc .tn-body{animation-duration:4.2s}
+.tsc.off *,.ty.vt.lk .tsc *{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){.tsc *,.co-sum *,.co-ok *,.stp .n::before,.co-go::after,.pm-mark *{animation:none!important}.sc-fb,.sc-l2,.sc-l3,.sc-h2,.sc-note{opacity:0!important}.sc-l1,.sc-h1,.sc-wave{opacity:1!important}}
+
+.tsc .tsc-svg.full{inset:0;width:100%;height:100%}
+.gs-key{animation:gsFlick 3.4s steps(1,end) infinite;transform-origin:center}
+.gs-key.k2{animation-duration:4.6s;animation-delay:-1.3s}
+@keyframes gsFlick{0%,100%{opacity:.95}11%{opacity:.78}12%{opacity:1}46%{opacity:.9}47%{opacity:.7}49%{opacity:1}78%{opacity:.86}79%{opacity:.97}}
+.gs-screen{transform-origin:center;animation:gsFloat 5s ease-in-out infinite}
+@keyframes gsFloat{50%{transform:translateY(-1.5px)}}
+.gs-s1,.gs-s2,.gs-s3{opacity:0;animation:gsSwap 9s cubic-bezier(.2,.9,.2,1) infinite}
+.gs-s2{animation-delay:-6s}.gs-s3{animation-delay:-3s}
+@keyframes gsSwap{0%{opacity:0;transform:translateX(10px)}4%,31%{opacity:1;transform:none}35%,100%{opacity:0;transform:translateX(-8px)}}
+.pointing .tn-wv{animation:gsPoint 3s ease-in-out infinite}
+@keyframes gsPoint{0%,100%{transform:rotate(-5deg)}45%{transform:rotate(7deg)}55%{transform:rotate(5deg)}}
+/* ---------- Change background scene ---------- */
+.bs-b1,.bs-b2,.bs-b3{animation:bsSwap 7.5s ease-in-out infinite}
+.bs-b2{animation-delay:-5s}.bs-b3{animation-delay:-2.5s}
+@keyframes bsSwap{0%{opacity:0}5%,30%{opacity:1}36%,100%{opacity:0}}
+.bs-b1{opacity:1}
+.bs-ants{animation:bsAnts .9s linear infinite}
+@keyframes bsAnts{to{stroke-dashoffset:-12}}
+.bs-wand{transform-origin:10% 90%;animation:bsWand 2.5s ease-in-out infinite}
+@keyframes bsWand{0%,100%{transform:rotate(0)}40%{transform:rotate(-14deg)}60%{transform:rotate(4deg)}}
+
+/* ---------- Auto-edit scene ---------- */
+.ae-head{animation:aeHead 4s linear infinite}
+@keyframes aeHead{from{transform:translateX(0)}to{transform:translateX(82px)}}
+.ae-gap{transform-origin:50% 50%;animation:aeGap 4s cubic-bezier(.2,.9,.2,1) infinite}
+@keyframes aeGap{0%,40%{transform:scaleX(1);opacity:1}55%,92%{transform:scaleX(0);opacity:0}100%{transform:scaleX(1);opacity:1}}
+.ae-right{animation:aeClose 4s cubic-bezier(.2,.9,.2,1) infinite}
+@keyframes aeClose{0%,40%{transform:translateX(0)}55%,92%{transform:translateX(-18px)}100%{transform:translateX(0)}}
+.ae-snip{animation:aeSnip 4s ease-in-out infinite}
+@keyframes aeSnip{0%,30%{opacity:0}36%,52%{opacity:1}60%,100%{opacity:0}}
+.ae-w1,.ae-w2{animation:aeWord 2.4s steps(1,end) infinite}
+.ae-w2{animation-delay:-1.2s}
+@keyframes aeWord{0%{opacity:1}50%,100%{opacity:0}}
+.ae-cap{transform-origin:center;animation:aePop 1.2s cubic-bezier(.2,.9,.3,1.3) infinite}
+@keyframes aePop{0%{transform:scale(.92)}20%,100%{transform:scale(1)}}
+.ae-zoom{transform-origin:center;animation:aeZoom 4s ease-in-out infinite}
+@keyframes aeZoom{0%,60%{opacity:0;transform:scale(1)}70%{opacity:1;transform:scale(.94)}90%,100%{opacity:0;transform:scale(.94)}}
+
+/* ---------- Brand music scene ---------- */
+.jg-spin{transform-origin:center;animation:jgSpin 3.2s linear infinite}
+@keyframes jgSpin{to{transform:rotate(360deg)}}
+.jg-arm{transform-origin:100% 0;animation:jgArm 6s ease-in-out infinite}
+@keyframes jgArm{0%,100%{transform:rotate(0)}50%{transform:rotate(3deg)}}
+.jg-sing{transform-origin:20% 100%;animation:jgSing 3.6s cubic-bezier(.2,.9,.3,1.3) infinite}
+@keyframes jgSing{0%,8%{opacity:0;transform:scale(.6)}16%,78%{opacity:1;transform:none}88%,100%{opacity:0;transform:scale(.9)}}
+
+.tsc.off *,.ty.vt.lk .tsc *{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){
+  .gs-s2,.gs-s3,.bs-b2,.bs-b3,.ae-w2,.ae-snip,.ae-zoom{opacity:0!important}
+  .gs-s1,.bs-b1,.ae-w1,.jg-sing{opacity:1!important}

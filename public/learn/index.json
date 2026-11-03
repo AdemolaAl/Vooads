@@ -1,0 +1,236 @@
+{
+ "made": "2026-11-03",
+ "width": 390,
+ "lessons": {
+  "getting-started": [
+   {
+    "img": "/learn/getting-started-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/getting-started-2.webp",
+    "ringed": false
+   },
+   {
+    "img": "/learn/getting-started-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/getting-started-4.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/getting-started-5.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/getting-started-6.webp",
+    "ringed": false
+   }
+  ],
+  "first-ugc-video": [
+   {
+    "img": "/learn/first-ugc-video-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/first-ugc-video-2.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/first-ugc-video-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/first-ugc-video-4.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/first-ugc-video-5.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/first-ugc-video-6.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/first-ugc-video-7.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/first-ugc-video-8.webp",
+    "ringed": false
+   }
+  ],
+  "long-videos": [
+   {
+    "img": "/learn/long-videos-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/long-videos-2.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/long-videos-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/long-videos-4.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/long-videos-5.webp",
+    "ringed": false
+   },
+   {
+    "img": "/learn/long-videos-6.webp",
+    "ringed": false
+   }
+  ],
+  "languages-geos": [
+   {
+    "img": "/learn/languages-geos-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/languages-geos-2.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/languages-geos-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/languages-geos-4.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/languages-geos-5.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/languages-geos-6.webp",
+    "ringed": false
+   }
+  ],
+  "ban-shield": [
+   {
+    "img": "/learn/ban-shield-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/ban-shield-2.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/ban-shield-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/ban-shield-4.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/ban-shield-5.webp",
+    "ringed": true
+   }
+  ],
+  "credits-plans": [
+   {
+    "img": "/learn/credits-plans-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/credits-plans-2.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/credits-plans-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/credits-plans-4.webp",
+    "ringed": false
+   },
+   {
+    "img": "/learn/credits-plans-5.webp",
+    "ringed": true
+   }
+  ],
+  "support-tickets": [
+   {
+    "img": "/learn/support-tickets-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/support-tickets-2.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/support-tickets-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/support-tickets-4.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/support-tickets-5.webp",
+    "ringed": true
+   }
+  ],
+  "scaling-winner": [
+   {
+    "img": "/learn/scaling-winner-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/scaling-winner-2.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/scaling-winner-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/scaling-winner-4.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/scaling-winner-5.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/scaling-winner-6.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/scaling-winner-7.webp",
+    "ringed": false
+   }
+  ],
+  "referrals-brand": [
+   {
+    "img": "/learn/referrals-brand-1.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/referrals-brand-2.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/referrals-brand-3.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/referrals-brand-4.webp",
+    "ringed": true
+   },
+   {
+    "img": "/learn/referrals-brand-5.webp",
+    "ringed": false
+   }
+  ]
+ }
+}

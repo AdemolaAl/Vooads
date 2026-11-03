@@ -1,0 +1,216 @@
+[
+  {
+    "id": "problem_solution",
+    "name": "Problem, solution, CTA",
+    "best_for": ["ecommerce-gadgets", "home", "saas", "pets", "cold traffic"],
+    "seconds": [15, 30, 60],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Hook: name the daily pain", "line_pattern": "If you [daily pain], watch this."},
+      {"t": "3-8s", "purpose": "Make the problem specific", "line_pattern": "Every [time], I [specific annoying moment]."},
+      {"t": "8-14s", "purpose": "Introduce the product", "line_pattern": "Then I found [product]. It [one core job]."},
+      {"t": "14-22s", "purpose": "Demo with one concrete detail", "line_pattern": "Look. I just [action] and it [visible result]."},
+      {"t": "22-26s", "purpose": "Handle the main objection", "line_pattern": "And no, it is not [objection]. [Short answer]."},
+      {"t": "26-30s", "purpose": "CTA", "line_pattern": "Tap the link and [next step]."}
+    ]
+  },
+  {
+    "id": "i_was_wrong",
+    "name": "I was doing it wrong",
+    "best_for": ["skincare", "supplements", "fitness", "education-courses", "trading-education"],
+    "seconds": [15, 30, 60],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Confession hook", "line_pattern": "I was [doing common thing] wrong for [time]."},
+      {"t": "3-9s", "purpose": "Describe the mistake", "line_pattern": "I used to [mistake], and I thought that was normal."},
+      {"t": "9-16s", "purpose": "The turning point", "line_pattern": "Then I learned [simple insight]."},
+      {"t": "16-24s", "purpose": "Show the right way with the product", "line_pattern": "Now I [new way] with [product]. Here is how."},
+      {"t": "24-30s", "purpose": "CTA", "line_pattern": "If you do it the old way too, check the link."}
+    ]
+  },
+  {
+    "id": "demo_first",
+    "name": "Demo first",
+    "best_for": ["ecommerce-gadgets", "home", "beauty", "food-drink"],
+    "seconds": [15, 30],
+    "base_seconds": 15,
+    "beats": [
+      {"t": "0-3s", "purpose": "Visual hook: product in action", "line_pattern": "Watch what happens when I [action]."},
+      {"t": "3-8s", "purpose": "Explain what we just saw", "line_pattern": "That is [product]. It [core job] in [time or steps]."},
+      {"t": "8-12s", "purpose": "Second detail", "line_pattern": "And it [second feature that matters]."},
+      {"t": "12-15s", "purpose": "CTA", "line_pattern": "Grab yours at the link."}
+    ]
+  },
+  {
+    "id": "pov_story",
+    "name": "POV story",
+    "best_for": ["mobile-apps", "fashion", "travel", "fintech-budgeting", "TikTok"],
+    "seconds": [15, 30],
+    "base_seconds": 15,
+    "beats": [
+      {"t": "0-3s", "purpose": "POV hook on screen and in voice", "line_pattern": "POV: you finally [desired moment]."},
+      {"t": "3-8s", "purpose": "Show the moment", "line_pattern": "It is [time], and I already [easy result]."},
+      {"t": "8-12s", "purpose": "Reveal the product", "line_pattern": "All because of [product]. It [core job]."},
+      {"t": "12-15s", "purpose": "CTA", "line_pattern": "Try it. Link is right there."}
+    ]
+  },
+  {
+    "id": "three_things",
+    "name": "3 things I check",
+    "best_for": ["skincare", "supplements", "ecommerce-gadgets", "real-estate", "crypto-apps"],
+    "seconds": [30, 60],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Listicle hook", "line_pattern": "3 things I check before I buy any [category]."},
+      {"t": "3-10s", "purpose": "Point one", "line_pattern": "One: [criterion]. [Why it matters in one line]."},
+      {"t": "10-17s", "purpose": "Point two", "line_pattern": "Two: [criterion]. [Why]."},
+      {"t": "17-24s", "purpose": "Point three, product passes all three", "line_pattern": "Three: [criterion]. [Product] ticks all three."},
+      {"t": "24-30s", "purpose": "CTA", "line_pattern": "Check it yourself at the link."}
+    ]
+  },
+  {
+    "id": "objection_buster",
+    "name": "Objection buster",
+    "best_for": ["saas", "mobile-apps", "education-courses", "coaching", "warm traffic"],
+    "seconds": [30, 60],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Say the doubt out loud", "line_pattern": "I thought [category] was [objection] too."},
+      {"t": "3-10s", "purpose": "Why the doubt makes sense", "line_pattern": "I had tried [alternative] and it [let me down]."},
+      {"t": "10-20s", "purpose": "What changed my mind", "line_pattern": "With [product], [specific difference]. Look."},
+      {"t": "20-26s", "purpose": "Second objection fast", "line_pattern": "And if you are worried about [objection 2], [answer]."},
+      {"t": "26-30s", "purpose": "Low-risk CTA", "line_pattern": "Try [free step] and see for yourself."}
+    ]
+  },
+  {
+    "id": "myth_truth",
+    "name": "Myth versus truth",
+    "best_for": ["fitness", "trading-education", "skincare", "weight-management", "health-clinics"],
+    "seconds": [15, 30, 60],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Name the myth", "line_pattern": "You do not need [common belief] to [goal]."},
+      {"t": "3-10s", "purpose": "Why people believe it", "line_pattern": "Everyone says [belief], and I believed it too."},
+      {"t": "10-20s", "purpose": "The simpler truth", "line_pattern": "What actually helped was [simple approach]."},
+      {"t": "20-26s", "purpose": "Product as the easy way to do it", "line_pattern": "[Product] makes that easy because [reason]."},
+      {"t": "26-30s", "purpose": "CTA", "line_pattern": "See how it works at the link."}
+    ]
+  },
+  {
+    "id": "comparison_old_way",
+    "name": "Old way versus new way",
+    "best_for": ["saas", "home", "fintech-budgeting", "local-services"],
+    "seconds": [15, 30],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Contrast hook", "line_pattern": "This is how I used to [task]. This is how I do it now."},
+      {"t": "3-10s", "purpose": "Old way pain", "line_pattern": "Before: [steps, time, cost]."},
+      {"t": "10-20s", "purpose": "New way demo", "line_pattern": "Now: I [one step] with [product]. Done."},
+      {"t": "20-26s", "purpose": "What I do with the time or money saved", "line_pattern": "That gives me [benefit] back every [period]."},
+      {"t": "26-30s", "purpose": "CTA", "line_pattern": "Switch at the link."}
+    ]
+  },
+  {
+    "id": "routine_walkthrough",
+    "name": "Routine walkthrough",
+    "best_for": ["skincare", "beauty", "supplements", "fitness", "pets"],
+    "seconds": [30, 60],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Routine hook", "line_pattern": "My [time of day] routine takes [short time]. Here it is."},
+      {"t": "3-10s", "purpose": "Step one", "line_pattern": "First, [step one]."},
+      {"t": "10-18s", "purpose": "Step two with the product", "line_pattern": "Then [product]. I like it because [texture, taste or feel]."},
+      {"t": "18-25s", "purpose": "Step three", "line_pattern": "Last, [step three]. That is it."},
+      {"t": "25-30s", "purpose": "CTA", "line_pattern": "The full set is at the link."}
+    ]
+  },
+  {
+    "id": "founder_why",
+    "name": "Founder: why we built this",
+    "best_for": ["saas", "food-drink", "fashion", "local-services", "brands speaking as themselves"],
+    "seconds": [30, 60],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Origin hook", "line_pattern": "We built [product] because we were tired of [problem]."},
+      {"t": "3-10s", "purpose": "The problem from the maker's view", "line_pattern": "Every [period], we saw [specific frustration]."},
+      {"t": "10-20s", "purpose": "What we made differently", "line_pattern": "So we made it [key difference]. Here is what that looks like."},
+      {"t": "20-26s", "purpose": "Honest detail", "line_pattern": "It is not for everyone. It is for people who [fit]."},
+      {"t": "26-30s", "purpose": "CTA", "line_pattern": "If that is you, have a look at the link."}
+    ]
+  },
+  {
+    "id": "gift_angle",
+    "name": "Gift recommendation",
+    "best_for": ["ecommerce-gadgets", "beauty", "fashion", "food-drink", "Q4 and holidays"],
+    "seconds": [15, 30],
+    "base_seconds": 15,
+    "beats": [
+      {"t": "0-3s", "purpose": "Recipient hook", "line_pattern": "If you have a friend who is always [trait], send them this."},
+      {"t": "3-8s", "purpose": "What it is", "line_pattern": "It is [product], and it [core job]."},
+      {"t": "8-12s", "purpose": "Why it lands as a gift", "line_pattern": "It looks [nice detail] and they will use it every [period]."},
+      {"t": "12-15s", "purpose": "CTA", "line_pattern": "Order before [date the user supplied]."}
+    ]
+  },
+  {
+    "id": "educational_explainer",
+    "name": "Educational explainer",
+    "best_for": ["trading-education", "crypto-apps", "fintech-budgeting", "education-courses", "health-clinics"],
+    "seconds": [30, 60],
+    "base_seconds": 60,
+    "beats": [
+      {"t": "0-3s", "purpose": "Learning hook", "line_pattern": "Things I wish I knew before I [started activity]."},
+      {"t": "3-12s", "purpose": "Lesson one", "line_pattern": "First: [basic concept in plain words]."},
+      {"t": "12-22s", "purpose": "Lesson two", "line_pattern": "Second: [common mistake and how to avoid it]."},
+      {"t": "22-32s", "purpose": "Pattern interrupt plus lesson three", "line_pattern": "And this one surprised me. [Third lesson]."},
+      {"t": "32-44s", "purpose": "Where the product helps", "line_pattern": "[Product] helps me [practise, track or learn] this with [feature]."},
+      {"t": "44-52s", "purpose": "Required risk or disclaimer line", "line_pattern": "[Risk line, for example: Trading involves risk. You can lose money.]"},
+      {"t": "52-60s", "purpose": "Soft CTA", "line_pattern": "Start with the free [lesson or demo] at the link."}
+    ]
+  },
+  {
+    "id": "unboxing",
+    "name": "Unboxing and first impressions",
+    "best_for": ["ecommerce-gadgets", "beauty", "fashion", "pets"],
+    "seconds": [15, 30, 60],
+    "base_seconds": 30,
+    "beats": [
+      {"t": "0-3s", "purpose": "Anticipation hook", "line_pattern": "It finally came. Let's open it."},
+      {"t": "3-10s", "purpose": "First look", "line_pattern": "Okay, the [packaging or build] feels [honest quality detail]."},
+      {"t": "10-20s", "purpose": "First use", "line_pattern": "Let me try it. [Action]. [Reaction]."},
+      {"t": "20-26s", "purpose": "One honest note", "line_pattern": "One thing to know: [real limitation or tip]."},
+      {"t": "26-30s", "purpose": "CTA", "line_pattern": "If you want one, it is at the link."}
+    ]
+  },
+  {
+    "id": "local_offer",
+    "name": "Local offer",
+    "best_for": ["local-services", "health-clinics", "food-drink", "real-estate"],
+    "seconds": [15, 30],
+    "base_seconds": 15,
+    "beats": [
+      {"t": "0-3s", "purpose": "Area hook", "line_pattern": "If you live in [area], this is for you."},
+      {"t": "3-8s", "purpose": "What we do", "line_pattern": "We [service] at [location or your place]."},
+      {"t": "8-12s", "purpose": "Price or availability (real)", "line_pattern": "Prices start at [price]. We are open [days]."},
+      {"t": "12-15s", "purpose": "CTA", "line_pattern": "Book a slot or message us."}
+    ]
+  },
+  {
+    "id": "long_story_90",
+    "name": "Long story (segment-safe)",
+    "best_for": ["coaching", "education-courses", "saas", "real-estate", "YouTube Shorts"],
+    "seconds": [60, 90],
+    "base_seconds": 90,
+    "beats": [
+      {"t": "0-3s", "purpose": "Hook", "line_pattern": "[Hook line, 12 words or fewer]."},
+      {"t": "3-12s", "purpose": "Story opening scene", "line_pattern": "[Time and place], I was [situation]."},
+      {"t": "12-22s", "purpose": "Problem deepens", "line_pattern": "The worst part was [stake]."},
+      {"t": "22-32s", "purpose": "Failed alternatives", "line_pattern": "I tried [option 1] and [option 2]. Neither [result]."},
+      {"t": "32-42s", "purpose": "Discovery and mechanism", "line_pattern": "Then I found [product]. It works by [plain mechanism]."},
+      {"t": "42-52s", "purpose": "Demo step one and two", "line_pattern": "Step one, [action]. Step two, [action]."},
+      {"t": "52-58s", "purpose": "Pattern interrupt plus step three", "line_pattern": "Here is the part I did not expect. [Step three]."},
+      {"t": "58-68s", "purpose": "Second use case or buyer", "line_pattern": "It also works if you [second use case]."},
+      {"t": "68-78s", "purpose": "Two objections", "line_pattern": "Worried about [objection]? [Answer]. And [objection 2]? [Answer]."},
+      {"t": "78-90s", "purpose": "Recap and CTA", "line_pattern": "So: [benefit 1], [benefit 2], [benefit 3]. Start at the link."}
+    ]
+  }
+]

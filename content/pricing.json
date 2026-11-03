@@ -1,0 +1,1103 @@
+{
+  "as_of": "2026-11-03",
+  "credit_usd_value": 0.01,
+  "min_margin_pct": 60,
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price_month": 49,
+      "price_year": 490,
+      "credits_month": 1000,
+      "seats": 1,
+      "max_ugc_seconds": 30,
+      "max_video_seconds": 15,
+      "features": [
+        "1,000 credits every month",
+        "About 4 UGC videos (15s) or 80+ image sets",
+        "AI UGC presenter videos up to 30s",
+        "Product/b-roll videos up to 15s",
+        "Images in all Meta sizes (1:1, 4:5, 9:16)",
+        "Dub any video into other languages with lip-sync",
+        "Hook packs and ad copy in many languages",
+        "Voiceovers and captions",
+        "No watermark, full commercial licence",
+        "Ban Shield check on every script"
+      ],
+      "scripts": false,
+      "popular": false
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price_month": 149,
+      "price_year": 1490,
+      "credits_month": 3500,
+      "seats": 2,
+      "max_ugc_seconds": 60,
+      "max_video_seconds": 30,
+      "features": [
+        "3,500 credits every month",
+        "About 15 UGC videos (15s) plus images and hooks",
+        "AI script writer: full UGC scripts and angles",
+        "AI UGC presenter videos up to 60s",
+        "Product/b-roll videos up to 30s",
+        "Dub any video into other languages with lip-sync",
+        "Images in all Meta sizes",
+        "Hook packs, ad copy, voiceovers, remixes",
+        "No watermark, full commercial licence",
+        "Ban Shield check on every script"
+      ],
+      "scripts": true,
+      "popular": true
+    },
+    {
+      "id": "scale",
+      "name": "Scale",
+      "price_month": 349,
+      "price_year": 3490,
+      "credits_month": 8500,
+      "seats": 5,
+      "max_ugc_seconds": 90,
+      "max_video_seconds": 45,
+      "features": [
+        "8,500 credits every month",
+        "About 37 UGC videos (15s) plus images and hooks",
+        "Everything in Pro",
+        "UGC up to 90s, b-roll up to 45s",
+        "Ban Shield check on every script"
+      ],
+      "scripts": true,
+      "popular": false
+    },
+    {
+      "id": "agency",
+      "name": "Agency",
+      "price_month": 799,
+      "price_year": 7990,
+      "credits_month": 20000,
+      "seats": 15,
+      "max_ugc_seconds": 120,
+      "max_video_seconds": 60,
+      "features": [
+        "20,000 credits every month",
+        "About 88 UGC videos (15s) plus images and hooks",
+        "Everything in Scale",
+        "UGC up to 120s, b-roll up to 60s",
+        "Ban Shield check on every script"
+      ],
+      "scripts": true,
+      "popular": false
+    }
+  ],
+  "topups": [
+    {
+      "id": "t1",
+      "price": 19,
+      "credits": 350
+    },
+    {
+      "id": "t2",
+      "price": 49,
+      "credits": 1000
+    },
+    {
+      "id": "t3",
+      "price": 99,
+      "credits": 2200
+    },
+    {
+      "id": "t4",
+      "price": 249,
+      "credits": 5800
+    }
+  ],
+  "costs": {
+    "ugc_video_per_second": 15,
+    "video_per_second": 10,
+    "image_3_sizes": 12,
+    "hook_pack_20": 6,
+    "script": 8,
+    "voice_per_second": 0.25,
+    "remix": 3,
+    "angles": 6,
+    "actor_faces": 12,
+    "captions_translate": 2,
+    "presenter_face": 3
+  },
+  "free_trial": {
+    "credits": 60,
+    "video_allowed": false,
+    "allowed_video_types": []
+  },
+  "provider_cost_usd": {
+    "ugc_video_per_second": 0.115,
+    "video_per_second": 0.07,
+    "image": 0.03,
+    "voice_per_1k_chars": 0.1,
+    "claude_script": 0.062,
+    "voice_per_second": 0.0015,
+    "presenter_image": 0.03,
+    "greenscreen_compose": 0.04,
+    "lipsync_per_second": 0.05,
+    "dubbing_voice_per_second": 0.0367,
+    "slideshow_per_second": 0.017,
+    "hook_variant": 0.59,
+    "angles": 0.019,
+    "remix": 0.019,
+    "music_ai_per_second": 0.0025,
+    "music_ai_per_track_min": 0.15,
+    "voice_standard_per_1k_chars": 0.04,
+    "voice_ultra_per_1k_chars": 0.1,
+    "motion_ad_per_second": 0.017,
+    "motion_ad_ultra_per_second": 0.08,
+    "stock_footage": 0,
+    "matting_per_second_60fps": 0.024,
+    "stt_per_hour": 0.4,
+    "music_fal_per_minute_rounded": 0.6,
+    "compute_per_second": 0.0005
+  },
+  "payment_fees": {
+    "note": "Card and gateway fees we pay on each purchase. The profit guard takes the worst fee of the switched-on payment methods off every credit price before it checks the 60% margin. A method can override these with Fee % and Fixed fee in Admin → Payment methods. Set them to your real contract rates.",
+    "default": {
+      "pct": 3.5,
+      "fixed_usd": 0.3
+    },
+    "by_adapter": {
+      "stripe": {
+        "pct": 2.9,
+        "fixed_usd": 0.3
+      },
+      "bachs": {
+        "pct": 1.5,
+        "fixed_usd": 0
+      },
+      "gatevoo": {
+        "pct": 1,
+        "fixed_usd": 0
+      },
+      "custom": {
+        "pct": 3.5,
+        "fixed_usd": 0.3
+      },
+      "bank": {
+        "pct": 0,
+        "fixed_usd": 0
+      },
+      "test": {
+        "pct": 0,
+        "fixed_usd": 0
+      }
+    }
+  },
+  "voice_tiers": {
+    "standard": {
+      "label": "Standard voice",
+      "provider_hint": "elevenlabs:eleven_flash_v2_5 (or Eleven v4 Turbo after a listening test)",
+      "cost_usd_per_1k_chars": 0.04,
+      "cost_usd_per_second": 0.0006,
+      "credits_per_second": 0
+    },
+    "ultra": {
+      "label": "Ultra-realistic voice",
+      "provider_hint": "elevenlabs:eleven_v3 (switch to Eleven v4, #1 on the Artificial Analysis TTS arena, once its model id is live in the adapter)",
+      "cost_usd_per_1k_chars": 0.1,
+      "cost_usd_per_second": 0.0015,
+      "credits_per_second": 1
+    }
+  },
+  "addons": {
+    "music": {
+      "name": "Background music",
+      "unit": "second",
+      "credits_per_unit": 2,
+      "provider_cost_usd_per_unit": 0.0025,
+      "fixed_cost_usd": 0.15,
+      "min_units": 10,
+      "provider_kind": "music",
+      "provider_hint": "elevenlabs_music (direct ElevenLabs Music API, $0.15/min); do not use the fal.ai ElevenLabs Music endpoint ($0.80/min rounded up)",
+      "min_plan": "starter",
+      "library_credits_per_unit": 0,
+      "library_provider_cost_usd_per_unit": 0
+    },
+    "voice_ultra": {
+      "name": "Ultra-realistic voice",
+      "unit": "second",
+      "credits_per_unit": 1,
+      "provider_cost_usd_per_unit": 0.0015,
+      "provider_kind": "voice",
+      "min_plan": "starter"
+    }
+  },
+  "video_types": [
+    {
+      "id": "ugc_talking",
+      "name": "UGC talking video",
+      "description": "An AI creator talks to camera about your product, like a real customer filmed on a phone. Voice, captions and presenter included.",
+      "pipeline": "ugc",
+      "provider_kind": "ugc",
+      "unit": "second",
+      "credits_per_unit": 15,
+      "provider_cost_usd_per_unit": 0.1165,
+      "fixed_cost_usd": 0.03,
+      "seconds_step": 1,
+      "segment_seconds": 10,
+      "min_seconds": 5,
+      "max_seconds_by_plan": {
+        "starter": 30,
+        "pro": 60,
+        "scale": 90,
+        "agency": 120
+      },
+      "min_plan": "starter",
+      "extras": {
+        "ai_script": 8,
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "ai_script": 0.062,
+        "captions": 0
+      },
+      "enabled": true,
+      "badge": "Most used",
+      "addons_allowed": [
+        "music",
+        "voice_ultra"
+      ],
+      "levels": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "model_label": "Kling Avatar v2",
+          "benefit": "Natural lip-sync, fast and great value",
+          "provider_tag": "kling-avatar-v2-pro",
+          "credits_per_unit": 15,
+          "provider_cost_usd_per_unit": 0.115,
+          "min_plan": null,
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling AI Avatar v2 Pro (fal-ai/kling-video/ai-avatar/v2/pro), $0.115/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "OmniHuman 1.5",
+          "benefit": "Lifelike gestures, expressions and skin",
+          "provider_tag": "omnihuman-1.5",
+          "credits_per_unit": 22,
+          "provider_cost_usd_per_unit": 0.16,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "ByteDance OmniHuman v1.5 (fal-ai/bytedance/omnihuman/v1.5), $0.16/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra cinematic",
+          "model_label": "Google Veo 3.1",
+          "benefit": "Film-grade 1080p with a native voice",
+          "provider_tag": "veo-3.1",
+          "credits_per_unit": 45,
+          "provider_cost_usd_per_unit": 0.4,
+          "min_plan": "scale",
+          "segment_seconds": 8,
+          "enabled": true,
+          "notes": "Google Veo 3.1 1080p with native dialogue audio (fal-ai/veo3.1/image-to-video, generate_audio true), $0.40/s; 4K ($0.60/s) not offered. 8s max per clip: parts are stitched, presenter consistency comes from the reference image. fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        }
+      ]
+    },
+    {
+      "id": "ugc_greenscreen",
+      "name": "Green-screen reaction",
+      "description": "An AI creator reacts and points like a TikTok green-screen video. Describe what they react to in your script.",
+      "pipeline": "ugc",
+      "provider_kind": "ugc",
+      "unit": "second",
+      "credits_per_unit": 15,
+      "provider_cost_usd_per_unit": 0.1165,
+      "fixed_cost_usd": 0.07,
+      "seconds_step": 1,
+      "segment_seconds": 10,
+      "min_seconds": 5,
+      "max_seconds_by_plan": {
+        "starter": 30,
+        "pro": 60,
+        "scale": 60,
+        "agency": 60
+      },
+      "min_plan": "starter",
+      "extras": {
+        "ai_script": 8,
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "ai_script": 0.062,
+        "captions": 0
+      },
+      "enabled": true,
+      "badge": null,
+      "addons_allowed": [
+        "music",
+        "voice_ultra"
+      ],
+      "levels": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "model_label": "Kling Avatar v2",
+          "benefit": "Natural lip-sync, fast and great value",
+          "provider_tag": "kling-avatar-v2-pro",
+          "credits_per_unit": 15,
+          "provider_cost_usd_per_unit": 0.115,
+          "min_plan": null,
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling AI Avatar v2 Pro (fal-ai/kling-video/ai-avatar/v2/pro), $0.115/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "OmniHuman 1.5",
+          "benefit": "Lifelike gestures, expressions and skin",
+          "provider_tag": "omnihuman-1.5",
+          "credits_per_unit": 22,
+          "provider_cost_usd_per_unit": 0.16,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "ByteDance OmniHuman v1.5 (fal-ai/bytedance/omnihuman/v1.5), $0.16/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra cinematic",
+          "model_label": "Google Veo 3.1",
+          "benefit": "Film-grade 1080p with a native voice",
+          "provider_tag": "veo-3.1",
+          "credits_per_unit": 45,
+          "provider_cost_usd_per_unit": 0.4,
+          "min_plan": "scale",
+          "segment_seconds": 8,
+          "enabled": true,
+          "notes": "Google Veo 3.1 1080p with native dialogue audio (fal-ai/veo3.1/image-to-video, generate_audio true), $0.40/s; 4K ($0.60/s) not offered. 8s max per clip: parts are stitched, presenter consistency comes from the reference image. fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        }
+      ]
+    },
+    {
+      "id": "ugc_podcast",
+      "name": "Podcast clip",
+      "description": "An AI host speaks into a studio microphone, cut like a viral podcast clip. Comes with a captions file.",
+      "pipeline": "ugc",
+      "provider_kind": "ugc",
+      "unit": "second",
+      "credits_per_unit": 15,
+      "provider_cost_usd_per_unit": 0.1165,
+      "fixed_cost_usd": 0.03,
+      "seconds_step": 1,
+      "segment_seconds": 10,
+      "min_seconds": 5,
+      "max_seconds_by_plan": {
+        "starter": 30,
+        "pro": 60,
+        "scale": 90,
+        "agency": 120
+      },
+      "min_plan": "starter",
+      "extras": {
+        "ai_script": 8,
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "ai_script": 0.062,
+        "captions": 0
+      },
+      "enabled": true,
+      "badge": null,
+      "addons_allowed": [
+        "music",
+        "voice_ultra"
+      ],
+      "levels": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "model_label": "Kling Avatar v2",
+          "benefit": "Natural lip-sync, fast and great value",
+          "provider_tag": "kling-avatar-v2-pro",
+          "credits_per_unit": 15,
+          "provider_cost_usd_per_unit": 0.115,
+          "min_plan": null,
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling AI Avatar v2 Pro (fal-ai/kling-video/ai-avatar/v2/pro), $0.115/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "OmniHuman 1.5",
+          "benefit": "Lifelike gestures, expressions and skin",
+          "provider_tag": "omnihuman-1.5",
+          "credits_per_unit": 22,
+          "provider_cost_usd_per_unit": 0.16,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "ByteDance OmniHuman v1.5 (fal-ai/bytedance/omnihuman/v1.5), $0.16/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra cinematic",
+          "model_label": "Google Veo 3.1",
+          "benefit": "Film-grade 1080p with a native voice",
+          "provider_tag": "veo-3.1",
+          "credits_per_unit": 45,
+          "provider_cost_usd_per_unit": 0.4,
+          "min_plan": "scale",
+          "segment_seconds": 8,
+          "enabled": true,
+          "notes": "Google Veo 3.1 1080p with native dialogue audio (fal-ai/veo3.1/image-to-video, generate_audio true), $0.40/s; 4K ($0.60/s) not offered. 8s max per clip: parts are stitched, presenter consistency comes from the reference image. fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        }
+      ]
+    },
+    {
+      "id": "product_broll",
+      "name": "Product b-roll",
+      "description": "Cinematic product shots, lifestyle scenes, unboxing or app demo footage made from a text prompt. Great for cutaways and as a full ad with captions.",
+      "pipeline": "video",
+      "provider_kind": "video",
+      "unit": "second",
+      "credits_per_unit": 10,
+      "provider_cost_usd_per_unit": 0.07,
+      "fixed_cost_usd": 0,
+      "seconds_step": 5,
+      "segment_seconds": 10,
+      "min_seconds": 5,
+      "max_seconds_by_plan": {
+        "starter": 15,
+        "pro": 30,
+        "scale": 45,
+        "agency": 60
+      },
+      "min_plan": "starter",
+      "extras": {
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "captions": 0
+      },
+      "enabled": true,
+      "badge": null,
+      "addons_allowed": [
+        "music"
+      ],
+      "levels": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "model_label": "Kling 2.5 Turbo",
+          "benefit": "Smooth motion, fast and great value",
+          "provider_tag": "kling-2.5-turbo-pro",
+          "credits_per_unit": 10,
+          "provider_cost_usd_per_unit": 0.07,
+          "min_plan": null,
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling 2.5 Turbo Pro (fal-ai/kling-video/v2.5-turbo/pro), $0.07/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "Kling 3.0",
+          "benefit": "Sharper detail and real physics, with sound",
+          "provider_tag": "kling-3.0-pro",
+          "credits_per_unit": 18,
+          "provider_cost_usd_per_unit": 0.168,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling 3.0 Pro with audio (fal-ai/kling-video/v3/pro), $0.168/s audio on ($0.112 off). Admin alternative: Veo 3.1 Fast ($0.15/s, off by default). fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra cinematic",
+          "model_label": "Google Veo 3.1",
+          "benefit": "Cinematic 1080p with native sound",
+          "provider_tag": "veo-3.1",
+          "credits_per_unit": 45,
+          "provider_cost_usd_per_unit": 0.4,
+          "min_plan": "scale",
+          "segment_seconds": 8,
+          "enabled": true,
+          "notes": "Google Veo 3.1 1080p with audio (fal-ai/veo3.1, image model fal-ai/veo3.1/image-to-video), $0.40/s. Clips are 4, 6 or 8s. Admin alternative: Seedance 2.0 1080p ($0.682/s, off by default, would need about 65 credits/s). fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        }
+      ]
+    },
+    {
+      "id": "image_to_video",
+      "name": "Photo to video",
+      "description": "Upload your product photo and we bring it to life with real motion and camera moves. Your real product, no AI lookalike.",
+      "pipeline": "image_to_video",
+      "provider_kind": "video",
+      "unit": "second",
+      "credits_per_unit": 10,
+      "provider_cost_usd_per_unit": 0.07,
+      "fixed_cost_usd": 0,
+      "seconds_step": 5,
+      "segment_seconds": 10,
+      "min_seconds": 5,
+      "max_seconds_by_plan": {
+        "starter": 10,
+        "pro": 15,
+        "scale": 20,
+        "agency": 30
+      },
+      "min_plan": "starter",
+      "extras": {
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "captions": 0
+      },
+      "enabled": true,
+      "badge": null,
+      "addons_allowed": [
+        "music"
+      ],
+      "levels": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "model_label": "Kling 2.5 Turbo",
+          "benefit": "Smooth motion, fast and great value",
+          "provider_tag": "kling-2.5-turbo-pro",
+          "credits_per_unit": 10,
+          "provider_cost_usd_per_unit": 0.07,
+          "min_plan": null,
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling 2.5 Turbo Pro (fal-ai/kling-video/v2.5-turbo/pro), $0.07/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "Kling 3.0",
+          "benefit": "Sharper detail and real physics, with sound",
+          "provider_tag": "kling-3.0-pro",
+          "credits_per_unit": 18,
+          "provider_cost_usd_per_unit": 0.168,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling 3.0 Pro with audio (fal-ai/kling-video/v3/pro), $0.168/s audio on ($0.112 off). Admin alternative: Veo 3.1 Fast ($0.15/s, off by default). fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra cinematic",
+          "model_label": "Google Veo 3.1",
+          "benefit": "Cinematic 1080p with native sound",
+          "provider_tag": "veo-3.1",
+          "credits_per_unit": 45,
+          "provider_cost_usd_per_unit": 0.4,
+          "min_plan": "scale",
+          "segment_seconds": 8,
+          "enabled": true,
+          "notes": "Google Veo 3.1 1080p with audio (fal-ai/veo3.1, image model fal-ai/veo3.1/image-to-video), $0.40/s. Clips are 4, 6 or 8s. Admin alternative: Seedance 2.0 1080p ($0.682/s, off by default, would need about 65 credits/s). fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        }
+      ]
+    },
+    {
+      "id": "slideshow",
+      "name": "Slideshow ad with voiceover",
+      "description": "A fast slideshow of AI images with smooth motion, a natural AI voiceover and bold captions. The cheapest video that still converts.",
+      "pipeline": "slideshow",
+      "provider_kind": "image",
+      "unit": "second",
+      "credits_per_unit": 3,
+      "provider_cost_usd_per_unit": 0.017,
+      "fixed_cost_usd": 0,
+      "seconds_step": 1,
+      "segment_seconds": 60,
+      "min_seconds": 10,
+      "max_seconds_by_plan": {
+        "starter": 60,
+        "pro": 90,
+        "scale": 120,
+        "agency": 120
+      },
+      "min_plan": "starter",
+      "extras": {
+        "ai_script": 8,
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "ai_script": 0.062,
+        "captions": 0
+      },
+      "enabled": true,
+      "badge": "Cheapest",
+      "addons_allowed": [
+        "music",
+        "voice_ultra"
+      ]
+    },
+    {
+      "id": "dub_translate",
+      "name": "Dub into another language",
+      "description": "Take a video that already works and get it in another language: a natural AI voice, new words, lips re-synced. Priced per target language.",
+      "pipeline": "dub",
+      "provider_kind": "ugc",
+      "provider_model": "fal-ai/sync-lipsync/v2",
+      "unit": "second",
+      "credits_per_unit": 12,
+      "provider_cost_usd_per_unit": 0.09,
+      "fixed_cost_usd": 0.01,
+      "seconds_step": 1,
+      "segment_seconds": 60,
+      "min_seconds": 5,
+      "max_seconds_by_plan": {
+        "starter": 30,
+        "pro": 60,
+        "scale": 90,
+        "agency": 120
+      },
+      "min_plan": "starter",
+      "extras": {
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "captions": 0
+      },
+      "enabled": true,
+      "badge": "New",
+      "addons_allowed": []
+    },
+    {
+      "id": "hook_remix",
+      "name": "Hook remix",
+      "description": "Hook factory: keep the body of a winning video and get 1 to 10 new spoken openings (up to 5s each), each stitched onto your video. 5 or more hooks cost 5% less, 10 cost 10% less.",
+      "pipeline": "hook_remix",
+      "provider_kind": "ugc",
+      "unit": "item",
+      "credits_per_unit": 75,
+      "provider_cost_usd_per_unit": 0.59,
+      "fixed_cost_usd": 0,
+      "seconds_step": 1,
+      "segment_seconds": 5,
+      "min_seconds": 2,
+      "max_seconds_by_plan": {
+        "starter": 5,
+        "pro": 5,
+        "scale": 5,
+        "agency": 5
+      },
+      "min_plan": "starter",
+      "extras": {
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "captions": 0
+      },
+      "enabled": true,
+      "badge": "For winners",
+      "addons_allowed": [],
+      "levels": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "model_label": "Kling Avatar v2",
+          "benefit": "Natural lip-sync, fast and great value",
+          "provider_tag": "kling-avatar-v2-pro",
+          "credits_per_unit": 75,
+          "provider_cost_usd_per_unit": 0.575,
+          "min_plan": null,
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling AI Avatar v2 Pro (fal-ai/kling-video/ai-avatar/v2/pro), $0.115/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "OmniHuman 1.5",
+          "benefit": "Lifelike gestures, expressions and skin",
+          "provider_tag": "omnihuman-1.5",
+          "credits_per_unit": 110,
+          "provider_cost_usd_per_unit": 0.8,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "ByteDance OmniHuman v1.5 (fal-ai/bytedance/omnihuman/v1.5), $0.16/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra cinematic",
+          "model_label": "Google Veo 3.1",
+          "benefit": "Film-grade 1080p with a native voice",
+          "provider_tag": "veo-3.1",
+          "credits_per_unit": 240,
+          "provider_cost_usd_per_unit": 2.4,
+          "min_plan": "scale",
+          "segment_seconds": 8,
+          "enabled": true,
+          "notes": "Google Veo 3.1 1080p with native dialogue audio (fal-ai/veo3.1/image-to-video, generate_audio true), $0.40/s; 4K ($0.60/s) not offered. 8s max per clip: parts are stitched, presenter consistency comes from the reference image. fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        }
+      ],
+      "bulk_discounts": [
+        {
+          "min": 5,
+          "pct": 5
+        },
+        {
+          "min": 10,
+          "pct": 10
+        }
+      ],
+      "max_hooks": 10
+    },
+    {
+      "id": "motion_ad",
+      "name": "Animated ad (Standard)",
+      "description": "A fast animated ad: stock footage and AI images, bold kinetic headlines in your brand colour, a natural voiceover, your logo and CTA end card.",
+      "pipeline": "motion_ad",
+      "quality": "standard",
+      "provider_kind": "image",
+      "unit": "second",
+      "credits_per_unit": 4,
+      "provider_cost_usd_per_unit": 0.017,
+      "fixed_cost_usd": 0.03,
+      "seconds_step": 1,
+      "segment_seconds": 4,
+      "min_seconds": 10,
+      "max_seconds_by_plan": {
+        "starter": 30,
+        "pro": 60,
+        "scale": 60,
+        "agency": 60
+      },
+      "min_plan": "starter",
+      "extras": {
+        "ai_script": 8,
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "ai_script": 0.062,
+        "captions": 0
+      },
+      "addons_allowed": [
+        "music",
+        "voice_ultra"
+      ],
+      "voice_tier_default": "standard",
+      "enabled": true,
+      "badge": "New"
+    },
+    {
+      "id": "motion_ad_ultra",
+      "name": "Animated ad (Ultra-realistic)",
+      "description": "Every scene is a brand-new AI-generated video shot, voiced by an ultra-realistic voice, with kinetic headlines and your CTA end card. Looks like a filmed commercial.",
+      "pipeline": "motion_ad",
+      "quality": "ultra",
+      "provider_kind": "video",
+      "unit": "second",
+      "credits_per_unit": 10,
+      "provider_cost_usd_per_unit": 0.08,
+      "fixed_cost_usd": 0.03,
+      "seconds_step": 5,
+      "segment_seconds": 5,
+      "min_seconds": 10,
+      "max_seconds_by_plan": {
+        "starter": 15,
+        "pro": 30,
+        "scale": 45,
+        "agency": 60
+      },
+      "min_plan": "starter",
+      "extras": {
+        "ai_script": 8,
+        "captions": 0
+      },
+      "extras_cost_usd": {
+        "ai_script": 0.062,
+        "captions": 0
+      },
+      "addons_allowed": [
+        "music"
+      ],
+      "includes": [
+        "voice_ultra"
+      ],
+      "voice_tier_default": "ultra",
+      "enabled": true,
+      "badge": "Ultra",
+      "levels": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "model_label": "Kling 2.5 Turbo",
+          "benefit": "Smooth motion, fast and great value",
+          "provider_tag": "kling-2.5-turbo-pro",
+          "credits_per_unit": 10,
+          "provider_cost_usd_per_unit": 0.07,
+          "min_plan": null,
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling 2.5 Turbo Pro (fal-ai/kling-video/v2.5-turbo/pro), $0.07/s, fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "Kling 3.0",
+          "benefit": "Sharper detail and real physics, with sound",
+          "provider_tag": "kling-3.0-pro",
+          "credits_per_unit": 24,
+          "provider_cost_usd_per_unit": 0.168,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling 3.0 Pro with audio (fal-ai/kling-video/v3/pro), $0.168/s audio on ($0.112 off). Admin alternative: Veo 3.1 Fast ($0.15/s, off by default). fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra cinematic",
+          "model_label": "Google Veo 3.1",
+          "benefit": "Cinematic 1080p with native sound",
+          "provider_tag": "veo-3.1",
+          "credits_per_unit": 55,
+          "provider_cost_usd_per_unit": 0.4,
+          "min_plan": "scale",
+          "segment_seconds": 4,
+          "enabled": true,
+          "notes": "Google Veo 3.1 1080p with audio (fal-ai/veo3.1, image model fal-ai/veo3.1/image-to-video), $0.40/s. Clips are 4, 6 or 8s. Admin alternative: Seedance 2.0 1080p ($0.682/s, off by default, would need about 65 credits/s). fal.ai list price, checked 4 Oct 2026 (fal.ai/models)."
+        }
+      ]
+    },
+    {
+      "id": "bg_swap",
+      "name": "Change background",
+      "description": "Upload your own video and put it on a new background: a solid colour, your picture, an AI-made scene or a stock video. Your voice and timing stay the same.",
+      "pipeline": "bg_swap",
+      "provider_kind": "matting",
+      "unit": "second",
+      "credits_per_unit": 3,
+      "provider_cost_usd_per_unit": 0.024,
+      "fixed_cost_usd": 0,
+      "compute_cost_usd_per_second": 0.0005,
+      "seconds_step": 1,
+      "segment_seconds": null,
+      "min_seconds": 10,
+      "max_seconds_by_plan": {
+        "starter": 30,
+        "pro": 60,
+        "scale": 120,
+        "agency": 120
+      },
+      "min_plan": "starter",
+      "extras": {
+        "ai_background": 4
+      },
+      "extras_cost_usd": {
+        "ai_background": 0.03
+      },
+      "upload": {
+        "max_seconds": 120,
+        "max_mb": 200,
+        "formats": [
+          "mp4",
+          "mov",
+          "webm"
+        ]
+      },
+      "enabled": true,
+      "badge": "New",
+      "addons_allowed": [],
+      "notes": "fal VEED video background removal fast (veed/video-background-removal/fast): $0.008 per 30 frames, $0.012 with edge refinement (on). Priced per second at 60 fps worst case = $0.024/s (faster footage is re-timed to 60 fps first). Source: fal.ai/models/VEED/video-background-removal/fast, checked 4 Oct 2026. AI background: one Seedream V4 image ($0.03)."
+    },
+    {
+      "id": "auto_edit",
+      "name": "Auto-edit my video",
+      "description": "Upload raw footage. We cut silences, filler words and bad takes, put your best line first, add animated captions in your brand colour, music and an end card, and reframe it for Reels and TikTok.",
+      "pipeline": "auto_edit",
+      "provider_kind": "stt",
+      "unit": "second",
+      "credits_per_unit": 2,
+      "provider_cost_usd_per_unit": 0.0003,
+      "fixed_cost_usd": 0,
+      "compute_cost_usd_per_second": 0.0005,
+      "min_credits": 30,
+      "seconds_step": 1,
+      "segment_seconds": null,
+      "min_seconds": 1,
+      "max_seconds_by_plan": {
+        "starter": 120,
+        "pro": 300,
+        "scale": 300,
+        "agency": 300
+      },
+      "min_plan": "starter",
+      "extras": {},
+      "extras_cost_usd": {},
+      "upload": {
+        "max_seconds": 300,
+        "max_mb": 500,
+        "formats": [
+          "mp4",
+          "mov",
+          "webm"
+        ]
+      },
+      "enabled": true,
+      "badge": "New",
+      "addons_allowed": [
+        "music"
+      ],
+      "notes": "Priced per second of the RAW upload. Costs: speech-to-text with word timings (ElevenLabs Scribe, priced at $0.40/hour; backup Whisper on fal at a $0.02/min placeholder), one AI edit-plan call per 2 minutes of footage (Claude, $0.062), ffmpeg time ($0.0005/s). Music add-on rules apply (your brand track is free)."
+    },
+    {
+      "id": "brand_music",
+      "name": "Brand music",
+      "description": "An original track for your brand: instrumental, or a jingle that sings your brand name. Saved to My brand tracks and free to reuse as the music of any video.",
+      "pipeline": "brand_music",
+      "provider_kind": "music",
+      "unit": "item",
+      "credits_per_unit": 60,
+      "provider_cost_usd_per_unit": 0.6,
+      "fixed_cost_usd": 0,
+      "price_by_seconds": {
+        "15": 60,
+        "30": 60,
+        "60": 60,
+        "120": 125
+      },
+      "seconds_step": 1,
+      "segment_seconds": null,
+      "min_seconds": 15,
+      "max_seconds_by_plan": {
+        "starter": 60,
+        "pro": 120,
+        "scale": 120,
+        "agency": 120
+      },
+      "min_plan": "starter",
+      "extras": {},
+      "extras_cost_usd": {},
+      "enabled": true,
+      "badge": "New",
+      "addons_allowed": [],
+      "notes": "ElevenLabs Music (direct API, $0.15/min) or ElevenLabs Music on fal (fal-ai/elevenlabs/music, $0.60 per output minute rounded up; off by default). The guard prices on the most expensive enabled AI music row; with no row enabled it assumes $0.60 per started minute. Commercial use: see AI content policy."
+    },
+    {
+      "id": "street_interview",
+      "name": "Street interview",
+      "description": "A presenter with a handheld mic stops a passer-by on a city street. Two AI speakers, natural back-and-forth, ambient street sound. An AI dramatization: never present it as a real customer.",
+      "pipeline": "street",
+      "provider_kind": "video",
+      "unit": "second",
+      "credits_per_unit": 22,
+      "provider_cost_usd_per_unit": 0.168,
+      "fixed_cost_usd": 0,
+      "seconds_step": 1,
+      "segment_seconds": 8,
+      "min_seconds": 8,
+      "max_seconds_by_plan": {
+        "starter": 0,
+        "pro": 30,
+        "scale": 45,
+        "agency": 60
+      },
+      "min_plan": "pro",
+      "extras": {
+        "ai_script": 8
+      },
+      "extras_cost_usd": {
+        "ai_script": 0.062
+      },
+      "enabled": true,
+      "badge": "New",
+      "addons_allowed": [],
+      "levels": [
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "Kling 3.0",
+          "benefit": "Two speakers with real street sound",
+          "provider_tag": "kling-3.0-pro",
+          "credits_per_unit": 22,
+          "provider_cost_usd_per_unit": 0.168,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "Kling 3.0 Pro with audio, $0.168/s; 22 credits/s keeps 60%+ at the cheapest credit price with the script call."
+        },
+        {
+          "id": "ultra",
+          "name": "Ultra cinematic",
+          "model_label": "Google Veo 3.1",
+          "benefit": "Cinematic 1080p, native dialogue and street sound",
+          "provider_tag": "veo-3.1",
+          "credits_per_unit": 50,
+          "provider_cost_usd_per_unit": 0.4,
+          "min_plan": "scale",
+          "segment_seconds": 8,
+          "enabled": true,
+          "notes": "Google Veo 3.1 with dialogue audio, $0.40/s in 8s clips; 50 credits/s."
+        }
+      ]
+    },
+    {
+      "id": "mad_edit",
+      "name": "Viral edit",
+      "description": "Fast cuts on the beat, zooms, bold captions and sound hits. Made from new AI product shots or from your own videos.",
+      "pipeline": "mad_edit",
+      "provider_kind": "video",
+      "unit": "second",
+      "credits_per_unit": 12,
+      "local_credits_per_unit": 3,
+      "provider_cost_usd_per_unit": 0.07,
+      "compute_cost_usd_per_second": 0.002,
+      "fixed_cost_usd": 0,
+      "seconds_step": 5,
+      "segment_seconds": 5,
+      "min_seconds": 10,
+      "max_seconds_by_plan": {
+        "starter": 15,
+        "pro": 30,
+        "scale": 45,
+        "agency": 60
+      },
+      "min_plan": "starter",
+      "extras": {
+        "ai_script": 0
+      },
+      "extras_cost_usd": {},
+      "enabled": true,
+      "badge": "New",
+      "addons_allowed": [],
+      "levels": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "model_label": "Kling 2.5 Turbo",
+          "benefit": "Smooth motion, fast and great value",
+          "provider_tag": "kling-2.5-turbo-pro",
+          "credits_per_unit": 12,
+          "provider_cost_usd_per_unit": 0.07,
+          "min_plan": null,
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "New AI shots on Kling 2.5 Turbo ($0.07/s) plus a text call and local ffmpeg; 12 credits/s."
+        },
+        {
+          "id": "pro",
+          "name": "Pro realistic",
+          "model_label": "Kling 3.0",
+          "benefit": "Sharper detail and real physics, with sound",
+          "provider_tag": "kling-3.0-pro",
+          "credits_per_unit": 20,
+          "provider_cost_usd_per_unit": 0.168,
+          "min_plan": "pro",
+          "segment_seconds": null,
+          "enabled": true,
+          "notes": "New AI shots on Kling 3.0 ($0.168/s); 20 credits/s."
+        }
+      ]
+    }
+  ]
+}
