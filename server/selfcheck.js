@@ -163,6 +163,19 @@ async function waitJob(jar, id, secs = 25) {
     const after = (await call('a', 'GET', '/api/admin/providers')).data.providers.find((p) => p.id === backup.id);
     assert.ok(after.is_default);
   });
+  await step('Admin can update AI provider config', async () => {
+    const added = await call('a', 'POST', '/api/admin/providers', {
+      name: 'Config update check', kind: 'text', adapter: 'http',
+      config: { url: 'https://old.example.test' }, enabled: false,
+    });
+    const id = added.data.provider.id;
+    const saved = await call('a', 'PUT', '/api/admin/providers/' + id, {
+      config: { url: 'https://new.example.test' },
+    });
+    assert.equal(saved.status, 200);
+    assert.equal(saved.data.provider.config.url, 'https://new.example.test');
+    await call('a', 'DELETE', '/api/admin/providers/' + id);
+  });
   await step('Bad pricing is refused', async () => {
     const r = await call('a', 'PUT', '/api/admin/pricing', { pricing: { plans: [], topups: [], costs: {} } });
     assert.equal(r.status, 400);

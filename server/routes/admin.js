@@ -389,11 +389,7 @@ module.exports = function mount(r) {
     if (b.api_key && b.enabled === undefined && !p.enabled) f.enabled = 1; // slots seeded switched off (stock, music) turn on when a key is added
     if (b.clear_key) f.api_key_enc = '';
     if (b.config !== undefined) {
-      const prev = J(m.config, {});
       const cfg = { ...(b.config && typeof b.config === 'object' ? b.config : {}) };
-      // The naira rate's age drives the stale-rate warning: stamp it when the rate changes, keep the old stamp otherwise.
-      if (m.adapter === 'bachs') cfg.ngn_rate_updated_at = Number(cfg.ngn_rate) > 0 && Number(cfg.ngn_rate) !== Number(prev.ngn_rate) ? new Date().toISOString() : prev.ngn_rate_updated_at || null; if (m.adapter === 'bachs') { for (const k of ['fx_paused', 'fx_pending_lower', 'fx_feed_rate', 'fx_checked_at', 'fx_last_error']) if (cfg[k] === undefined && prev[k] !== undefined) cfg[k] = prev[k]; if (cfg.fx_buffer_pct !== undefined && cfg.fx_buffer_pct !== '' && !(Number(cfg.fx_buffer_pct) >= 0 && Number(cfg.fx_buffer_pct) <= 50)) fail(400, 'FX buffer must be between 0 and 50%.'); } if (m.adapter === 'bachs' && Number(cfg.ngn_rate) > 0 && Number(cfg.ngn_rate) !== Number(prev.ngn_rate)) { delete cfg.fx_paused; delete cfg.fx_pending_lower; }
-      if (cfg.customer_fee_pct !== undefined && cfg.customer_fee_pct !== '' && !(Number(cfg.customer_fee_pct) >= 0 && Number(cfg.customer_fee_pct) <= 20)) fail(400, 'Customer fee % must be between 0 and 20.'); for (const k of ['fee_pct', 'fee_fixed_usd']) if (cfg[k] !== undefined && cfg[k] !== '' && cfg[k] !== null && !(Number(cfg[k]) >= 0 && Number(cfg[k]) <= (k === 'fee_pct' ? 50 : 20))) fail(400, k === 'fee_pct' ? 'Fee % must be between 0 and 50.' : 'The fixed fee must be between 0 and 20 US dollars.');
       f.config = JSON.stringify(cfg);
     }
     if (b.cost_usd !== undefined) f.cost_usd = Number(b.cost_usd) || 0;
